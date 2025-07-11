@@ -1,4 +1,5 @@
 <?php
+echo '<h1>TEST ENFANT</h1>';
 // Appelle l’en-tête
 get_header(); 
 ?>

@@ -1,5 +1,30 @@
 /*
- Theme Name:     natalie-mota
- Template:       twentytwentyfive
- Version:        1.0.0
+Theme Name: natalie-mota
+Theme URI: https://exemple.com/
+Author: David Lawson
+Author URI: https://exemple.com/
+Description: Thème enfant personnalisé du site Natalie Mota
+Version: 1.0
+Template: twentytwentyfive
+Text Domain: nataliemota
 */
+
+.logo {
+    max-width: 300px;
+    margin-left: 50px;
+}
+
+.main-menu {
+    display: flex;
+    max-width: 700px;
+    list-style: none;
+    gap: 20px;
+}
+
+.main-menu a {
+    text-decoration: none;
+}
+
+.main-menu a:hover {
+    text-decoration: solid;
+}
