@@ -8,18 +8,17 @@
 </head>
 <body <?php body_class(); ?>>
 
-<header>
-    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/Logo.png" class="logo" alt="Logo">
+<header class="site-header">
+    
+    <nav class="main-nav">
+      <div class="logo">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/Logo.png" alt="Logo">
+      </div>
+        <?php
+        wp_nav_menu(array(
+            'theme_location' => 'primary',
+            'menu_class' => 'main-menu'
+        ));
+        ?>
+    </nav>
 </header>
-
-<?php
-wp_nav_menu(array(
-  'theme_location' => 'primary',
-  'container' => 'nav',
-  'menu_class' => 'main-menu'
-));
-?>
-
-<?php
-echo '<!-- Header ENFANT chargé -->';
-?>

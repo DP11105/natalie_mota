@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <main>
-    <h1>Bienvenue sur la page d’accueil</h1>
+
 
     <?php
     if ( have_posts() ) :
@@ -13,6 +13,8 @@
         echo '<p>Aucun contenu à afficher.</p>';
     endif;
     ?>
+
+    <img src ="wp-content/themes/natalie-mota/images/Header.png" class="hero-header" alt=" image d'en tete">
 </main>
 
 <?php get_footer(); ?>

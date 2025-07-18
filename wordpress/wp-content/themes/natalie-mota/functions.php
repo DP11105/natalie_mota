@@ -1,6 +1,6 @@
 <?php
 function mon_theme_enfant_enqueue_styles() {
-    $parent_style = 'twentytwentyfive-style'; // Nom enregistré dans le thème parent
+    $parent_style = 'generate-style'; // Nom enregistré dans le thème parent
 
     wp_enqueue_style($parent_style, get_template_directory_uri() . '/style.css');
 
@@ -11,6 +11,17 @@ function mon_theme_enfant_enqueue_styles() {
     );
 }
 add_action('wp_enqueue_scripts', 'mon_theme_enfant_enqueue_styles');
+
+function mon_theme_enqueue_scripts() {
+    wp_enqueue_script(
+        'script.js', // nom interne
+        get_stylesheet_directory_uri(). '/js/script.js', // chemin vers le fichier
+        array(), // dépendances éventuelles (ex: array('jquery'))
+        false, // version (false pour ne pas mettre de version)
+        true // true pour le charger dans le footer
+    );
+}
+add_action('wp_enqueue_scripts', 'mon_theme_enqueue_scripts');
 
 // Ajouter une page d'administration au menu
 function nataliemota_add_admin_pages() {
