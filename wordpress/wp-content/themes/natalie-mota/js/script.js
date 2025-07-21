@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     var modal = document.getElementById("contactModal");
-    var btn = document.getElementById("menu-item-14");
+    var btn = document.getElementById("menu-item-61");
     var span = modal.querySelector(".close");
 
     btn.onclick = function () {
