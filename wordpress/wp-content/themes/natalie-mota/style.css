@@ -30,6 +30,11 @@ Text Domain: nataliemota
     font-family: 'SpaceMono';
 }
 
+body {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
 h1 {
 font-size: 96px;
 font-style: italic;
@@ -38,8 +43,12 @@ font-style: italic;
 h2 {
     font-size: 66px;
     font-style: italic;
+    text-transform: uppercase;
 }
 
+p {
+    font-size: 14px!important;
+}
 
 .main-menu {
     max-width: 700px;
@@ -70,7 +79,6 @@ h2 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 30px;
 }
 
 .footer-menu a {
@@ -84,7 +92,9 @@ h2 {
 }
 
 .hero-header {
-    width: 100%;
+    width: 120%!important;
+    max-width: 120%!important;
+    margin-left: 0px;
 }
 
 .modal {
@@ -117,4 +127,17 @@ h2 {
     font-size: 24px;
     font-weight: bold;
     cursor: pointer;
+}
+
+.coté-gauche {
+    max-width: 420px;
+}
+
+.coté-gauche p {
+    text-transform: uppercase;
+}
+
+.coté-gauche h2 {
+    margin: 15px 0px;
+    font-weight: 400;
 }
