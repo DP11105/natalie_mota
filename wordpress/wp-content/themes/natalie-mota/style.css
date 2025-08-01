@@ -31,7 +31,7 @@ Text Domain: nataliemota
 }
 
 body {
-    max-width: 90%;
+    max-width: 85%;
     margin: 0 auto;
 }
 
@@ -76,6 +76,7 @@ p {
 }
 
 .main-nav {
+    height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -91,10 +92,11 @@ p {
     list-style: none;
 }
 
-.hero-header {
-    width: 120%!important;
-    max-width: 120%!important;
-    margin-left: 0px;
+* .hero-header {
+    position: absolute;
+    max-width: 1540px;
+    right: 0px;
+    width: 100%;
 }
 
 .modal {
@@ -112,12 +114,51 @@ p {
 
 .modal-content {
     background-color: #fff;
-    margin: auto;
-    padding: 20px;
-    width: 90%;
-    max-width: 500px;
+    margin: auto ;
+    padding: 20px 0px;
+    width: 70%;
+    height: 880px;
+    max-width: 550px;
     border-radius: 8px;
     position: relative;
+}
+
+.image-modal {
+    width: 550px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.modal-content input {
+    width: 330px!important;
+    height: 45px;
+    border-radius: 10px;
+    border: solid 1px;
+    margin-top: 5px;
+
+}
+
+.modal-content textarea {
+    width: 330px!important;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+.modal-content p {
+    width: 330px;
+    margin-left: 85px;
+    margin-bottom: 20px;
+}
+
+.modal-content label {
+    font-family: 'Poppins';
+}
+
+.has-spinner {
+    border-radius: 2px!important;
+    border: none!important;
+    background-color: #D8D8D8;
+    margin-bottom: 30px;
 }
 
 .close {
@@ -130,14 +171,69 @@ p {
 }
 
 .coté-gauche {
-    max-width: 420px;
+    width: 50%;
+    margin-right: 20px;
+    margin-bottom: 0px;
+    padding-bottom: 20px;
+    border-bottom: solid 1px;
 }
 
 .coté-gauche p {
     text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
 .coté-gauche h2 {
+    max-width: 420px;
     margin: 15px 0px;
     font-weight: 400;
+    line-height: 0.8;
+}
+
+.photo-item {
+    display: flex;
+    align-items: end;
+}
+
+.coté-droit {
+    width: 50%;
+}
+
+.coté-droit img {
+    width: 100%!important;
+    object-fit: cover;
+    max-height: 744px!important;
+    height: 744px;
+}
+
+.contact-single {
+    padding: 10px 90px;
+    background-color: #D8D8D8;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.contact-btn {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin: 30px 0px;
+}
+
+.autres-photos {
+    border-top: solid 1px;
+    padding-top: 50px;
+    gap: 20px;
+}
+
+.photos img {
+    width: 49%;
+    height: 495px;
+    gap: 20px;
+    object-fit: cover!important;
+}
+
+.photos {
+    display: flex;
+    justify-content: space-between;
 }
