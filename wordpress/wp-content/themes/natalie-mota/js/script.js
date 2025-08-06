@@ -22,9 +22,11 @@ document.addEventListener('DOMContentLoaded', function () {
     var modal = document.getElementById("contactModal");
     var btnn = document.querySelector(".contact-single");
     var span = modal.querySelector(".close");
+    let refs = $(".ref-p").data("ref");
 
     btnn.onclick = function () {
         modal.style.display = "block";
+        
     }
 
     span.onclick = function () {
@@ -36,4 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
             modal.style.display = "none";
         }
     }
+
+  
 });
+

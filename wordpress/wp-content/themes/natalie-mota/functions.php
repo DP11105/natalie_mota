@@ -23,6 +23,11 @@ function mon_theme_enqueue_scripts() {
 }
 add_action('wp_enqueue_scripts', 'mon_theme_enqueue_scripts');
 
+function mon_theme_scripts() {
+    // Charger jQuery (si ce n’est pas déjà fait)
+    wp_enqueue_script('jquery');
+}
+
 // Ajouter une page d'administration au menu
 function nataliemota_add_admin_pages() {
     add_menu_page(

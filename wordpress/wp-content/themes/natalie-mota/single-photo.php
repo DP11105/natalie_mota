@@ -9,7 +9,7 @@
                         <h2><?php the_title(); ?></h2>
 
                         <!-- Champs SCF -->
-                            <p>Référence : <?php echo get_post_meta(get_the_ID(), 'reference', true); ?></p>
+                            <p class="ref-p" data-ref="<?php echo esc_attr(get_post_meta(get_the_ID(), 'reference', true)); ?>">Référence : <?php echo get_post_meta(get_the_ID(), 'reference', true); ?></p>
                             <p>Type : <?php echo get_post_meta(get_the_ID(), 'type', true); ?></p>
                 
                         

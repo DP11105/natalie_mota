@@ -31,9 +31,12 @@ Text Domain: nataliemota
 }
 
 body {
-    max-width: 85%;
+    max-width: 1550px;
+    width: 85%;
     margin: 0 auto;
 }
+
+body :not(#h-header) 
 
 h1 {
 font-size: 96px;
@@ -92,12 +95,10 @@ p {
     list-style: none;
 }
 
-* .hero-header {
-    position: absolute;
-    max-width: 1540px;
-    right: 0px;
-    width: 100%;
-}
+ .hero-header {
+    width: 1600px;
+    
+ }    
 
 .modal {
     display: none;
@@ -227,7 +228,7 @@ p {
 }
 
 .photos img {
-    width: 49%;
+    width: 48%;
     height: 495px;
     gap: 20px;
     object-fit: cover!important;
@@ -236,4 +237,22 @@ p {
 .photos {
     display: flex;
     justify-content: space-between;
+}
+
+.liste-photos img {
+    position: relative;
+    width: 620px;
+    height: 500px;
+    max-width: 700px!important;
+    object-fit: cover;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.liste-photos {
+    margin-top: 75px;
+    max-width: 1292px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
