@@ -19,23 +19,23 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-    var modal = document.getElementById("contactModal");
+    var modals = document.getElementById("contactModal");
     var btnn = document.querySelector(".contact-single");
-    var span = modal.querySelector(".close");
-    let refs = $(".ref-p").data("ref");
+    var spans = modals.querySelector(".close");
+    var refs = jQuery(".ref-p").data("ref");
 
     btnn.onclick = function () {
-        modal.style.display = "block";
-        
+        modals.style.display = "block";
+        jQuery(".ref-contact").val(refs);
     }
 
-    span.onclick = function () {
-        modal.style.display = "none";
+    spans.onclick = function () {
+        modals.style.display = "none";
     }
 
     window.onclick = function (event) {
-        if (event.target === modal) {
-            modal.style.display = "none";
+        if (event.target === modals) {
+            modals.style.display = "none";
         }
     }
 

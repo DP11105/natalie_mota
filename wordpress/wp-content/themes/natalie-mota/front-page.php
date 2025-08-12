@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-
+<img src ="wp-content/themes/natalie-mota/images/Header.png" id="h-header" class="hero-header" alt=" image d'en tete">
 <main>
 
 
@@ -15,12 +15,13 @@
     ?>
 
 
-    <img src ="wp-content/themes/natalie-mota/images/Header.png" id="h-header" class="hero-header" alt=" image d'en tete">
+    
     <div class="liste-photos">
         <?php
             // 1. On définit les arguments pour définir ce que l'on souhaite récupérer
             $args = array(
                 'post_type' => 'photo',
+                'orderby'        => 'rand',
                 'posts_per_page' => 8,
             );
 
@@ -44,6 +45,7 @@
             // 4. On réinitialise à la requête principale (important)
             wp_reset_postdata();
         ?>
+        <a href="#" class="btn-charger"> Charger plus </a>
     </div>
 </main>
 

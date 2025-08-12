@@ -26,7 +26,9 @@
                 if ($my_query->have_posts()) :
                     while ($my_query->have_posts()) : $my_query->the_post();
                         if (has_post_thumbnail()) {
+                            echo'<a href="' . get_permalink() .'">';
                             the_post_thumbnail('medium'); // ou 'thumbnail', 'large' selon ton besoin
+                            echo '</a>';
                         }
                     endwhile;
                 endif;

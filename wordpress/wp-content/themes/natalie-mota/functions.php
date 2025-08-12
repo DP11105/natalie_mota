@@ -12,6 +12,8 @@ function mon_theme_enfant_enqueue_styles() {
 }
 add_action('wp_enqueue_scripts', 'mon_theme_enfant_enqueue_styles');
 
+
+
 function mon_theme_enqueue_scripts() {
     wp_enqueue_script(
         'script.js', // nom interne
@@ -25,8 +27,15 @@ add_action('wp_enqueue_scripts', 'mon_theme_enqueue_scripts');
 
 function mon_theme_scripts() {
     // Charger jQuery (si ce n’est pas déjà fait)
-    wp_enqueue_script('jquery');
+    wp_enqueue_script('mon-script', get_template_directory_uri() . '/js/main.js', ['jquery'], null, true);
+
+    wp_localize_script('mon-script', 'mon_ajax', [
+        'ajax_url' => admin_url('admin-ajax.php'),
+        'nonce'    => wp_create_nonce('mon_nonce')
+    ]);
+
 }
+add_action('wp_enqueue_scripts', 'mon_theme_scripts');
 
 // Ajouter une page d'administration au menu
 function nataliemota_add_admin_pages() {
