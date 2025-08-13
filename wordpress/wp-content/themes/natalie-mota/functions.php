@@ -25,17 +25,67 @@ function mon_theme_enqueue_scripts() {
 }
 add_action('wp_enqueue_scripts', 'mon_theme_enqueue_scripts');
 
-function mon_theme_scripts() {
-    // Charger jQuery (si ce n’est pas déjà fait)
-    wp_enqueue_script('mon-script', get_template_directory_uri() . '/js/main.js', ['jquery'], null, true);
+// Enregistrement du JS avec ajax_url et nonce
+function mon_theme_script() {
+    wp_enqueue_script(
+        'ajax-photos',
+        get_stylesheet_directory_uri() . '/js/ajax-photos.js',
+        ['jquery'],
+        null,
+        true
+    );
 
-    wp_localize_script('mon-script', 'mon_ajax', [
+    wp_localize_script('ajax-photos', 'mon_ajax', [
         'ajax_url' => admin_url('admin-ajax.php'),
-        'nonce'    => wp_create_nonce('mon_nonce')
+        'nonce'    => wp_create_nonce('charger_photos_nonce')
     ]);
-
 }
-add_action('wp_enqueue_scripts', 'mon_theme_scripts');
+add_action('wp_enqueue_scripts', 'mon_theme_script');
+
+// Callback AJAX (connectés et non connectés)
+add_action('wp_ajax_charger_photos', 'charger_photos_ajax');
+add_action('wp_ajax_nopriv_charger_photos', 'charger_photos_ajax');
+
+function charger_photos_ajax() {
+    // Sécurité
+    if (!isset($_POST['nonce']) || !wp_verify_nonce($_POST['nonce'], 'charger_photos_nonce')) {
+        wp_send_json_error(['message' => 'Nonce invalide']);
+    }
+
+    // Récupère les IDs exclus envoyés par le JS
+    $excluded_ids = array_map('intval', explode(',', $_POST['excluded_ids']));
+
+    // Requête pour le reste des photos
+    $args = array(
+        'post_type'      => 'photo',
+        'orderby'        => 'rand',
+        'posts_per_page' => -1, // toutes les autres
+        'post__not_in'   => $excluded_ids,
+    );
+
+    $my_query = new WP_Query($args);
+
+    ob_start(); // Capture du HTML
+
+    if ($my_query->have_posts()) :
+        while ($my_query->have_posts()) :
+            $my_query->the_post();
+            if (has_post_thumbnail()) {
+                echo '<a href="' . get_permalink() . '">';
+                the_post_thumbnail('medium');
+                echo '</a>';
+            }
+        endwhile;
+    endif;
+
+    wp_reset_postdata();
+
+
+    $html = ob_get_clean();
+
+    // 3. Retour en JSON
+    wp_send_json_success(['html' => $html]);
+}
 
 // Ajouter une page d'administration au menu
 function nataliemota_add_admin_pages() {

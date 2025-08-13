@@ -258,7 +258,7 @@ p {
     justify-content: space-between;
 }
 
-.liste-photos img {
+#zone-photos a img {
     position: relative;
     width: 620px;
     height: 500px;
@@ -268,10 +268,14 @@ p {
     margin-bottom: 50px;
 }
 
-.liste-photos {
+#zone-photos {
     margin-top: 75px;
     max-width: 1292px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+
+.btn-pas-charger {
+    display: none;
 }
