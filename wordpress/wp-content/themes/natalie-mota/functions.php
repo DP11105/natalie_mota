@@ -1,16 +1,15 @@
 <?php
-function mon_theme_enfant_enqueue_styles() {
-    $parent_style = 'generate-style'; // Nom enregistré dans le thème parent
 
-    wp_enqueue_style($parent_style, get_template_directory_uri() . '/style.css');
-
-    wp_enqueue_style('child-style',
-        get_stylesheet_directory_uri() . '/style.css',
-        array($parent_style),
-        wp_get_theme()->get('Version')
+function nataliemota_enqueue_styles() {
+    wp_enqueue_style(
+        'nataliemota-style',
+        get_stylesheet_uri(), // récupère le style.css du thème actif
+        array(),              // dépendances éventuelles
+        filemtime(get_stylesheet_directory() . '/style.css') // version dynamique pour éviter le cache
     );
 }
-add_action('wp_enqueue_scripts', 'mon_theme_enfant_enqueue_styles');
+add_action('wp_enqueue_scripts', 'nataliemota_enqueue_styles');
+
 
 
 
@@ -25,67 +24,195 @@ function mon_theme_enqueue_scripts() {
 }
 add_action('wp_enqueue_scripts', 'mon_theme_enqueue_scripts');
 
-// Enregistrement du JS avec ajax_url et nonce
-function mon_theme_script() {
+
+
+
+// Enqueue + localisation (assure-toi que le chemin du JS est correct)
+add_action('wp_enqueue_scripts', function() {
     wp_enqueue_script(
-        'ajax-photos',
+        'filtres-photos',
         get_stylesheet_directory_uri() . '/js/ajax-photos.js',
-        ['jquery'],
+        array('jquery'),
         null,
         true
     );
 
-    wp_localize_script('ajax-photos', 'mon_ajax', [
+    wp_localize_script('filtres-photos', 'mon_ajax', array(
         'ajax_url' => admin_url('admin-ajax.php'),
-        'nonce'    => wp_create_nonce('charger_photos_nonce')
-    ]);
-}
-add_action('wp_enqueue_scripts', 'mon_theme_script');
+        'nonce'    => wp_create_nonce('filtrer_photos_nonce'),
+    ));
+});
 
-// Callback AJAX (connectés et non connectés)
-add_action('wp_ajax_charger_photos', 'charger_photos_ajax');
-add_action('wp_ajax_nopriv_charger_photos', 'charger_photos_ajax');
+// Hooks AJAX
+add_action('wp_ajax_filtrer_photos', 'filtrer_photos_callback');
+add_action('wp_ajax_nopriv_filtrer_photos', 'filtrer_photos_callback');
 
-function charger_photos_ajax() {
-    // Sécurité
-    if (!isset($_POST['nonce']) || !wp_verify_nonce($_POST['nonce'], 'charger_photos_nonce')) {
-        wp_send_json_error(['message' => 'Nonce invalide']);
+function filtrer_photos_callback() {
+    // Vérification du nonce
+    if ( empty($_POST['nonce']) || ! wp_verify_nonce( $_POST['nonce'], 'filtrer_photos_nonce' ) ) {
+        wp_send_json_error( array('message' => 'Nonce invalide') );
     }
 
-    // Récupère les IDs exclus envoyés par le JS
-    $excluded_ids = array_map('intval', explode(',', $_POST['excluded_ids']));
+    // Construction du tax_query si besoin
+    $tax_query = array();
 
-    // Requête pour le reste des photos
+    if ( ! empty( $_POST['categorie'] ) ) {
+        $tax_query[] = array(
+            'taxonomy' => 'categorie',
+            'field'    => 'slug',
+            'terms'    => sanitize_text_field( wp_unslash( $_POST['categorie'] ) ),
+        );
+    }
+
+    if ( ! empty( $_POST['format'] ) ) {
+        $tax_query[] = array(
+            'taxonomy' => 'format',
+            'field'    => 'slug',
+            'terms'    => sanitize_text_field( wp_unslash( $_POST['format'] ) ),
+        );
+    }
+
+    // Si on a plusieurs rules, on met 'relation' au début
+    if ( count( $tax_query ) > 1 ) {
+        $tax_query = array_merge( array( 'relation' => 'AND' ), $tax_query );
+    }
+
+    // Arguments de la requête
     $args = array(
         'post_type'      => 'photo',
-        'orderby'        => 'rand',
-        'posts_per_page' => -1, // toutes les autres
+        'post_status'    => 'publish',
+        'posts_per_page' => -1,
+        'orderby'        => 'date',
+        'order'          => 'DESC',
+    );
+
+    if ( ! empty( $tax_query ) ) {
+        $args['tax_query'] = $tax_query;
+    }
+
+    // Exécution de la requête
+    $q = new WP_Query( $args );
+
+    ob_start();
+
+    if ( $q->have_posts() ) {
+        while ( $q->have_posts() ) {
+            $q->the_post();
+
+            if ( has_post_thumbnail() ) {
+    $year  = get_the_date( 'Y' );
+    $title = get_the_title();
+
+    // Récupère juste les noms des catégories (pas de balise <a>)
+    $categories_terms = wp_get_post_terms( get_the_ID(), 'categorie', ['fields' => 'names'] );
+    $categories       = !empty( $categories_terms ) ? implode( ', ', $categories_terms ) : '';
+
+    echo '<a href="' . esc_url( get_permalink() ) . '" data-year="' . esc_attr( $year ) . '" class="image-galerie">';
+        // image avec classe
+        echo get_the_post_thumbnail( get_the_ID(), 'medium', array( 'class' => 'images-galerie' ) );
+
+        // overlay
+        echo '<div class="overlay">';
+            echo '<h3 class="titre-photo">' . esc_html( $title ) . '</h3>';
+            if ( $categories ) {
+                echo '<p class="categorie-photo">' . esc_html( $categories ) . '</p>';
+            }
+            echo '<div class="icones">';
+                echo '<span class="icone-oeil"><i class="fa-regular fa-eye" aria-hidden="true"></i></span>';
+                echo '<span class="icone-grand-ecran"><i class="fa-solid fa-expand" aria-hidden="true"></i></span>';
+            echo '</div>';
+        echo '</div>';
+
+    echo '</a>';
+}
+        }
+    } else {
+        echo '<p>Aucune photo trouvée.</p>';
+    }
+
+    wp_reset_postdata();
+
+    $html = ob_get_clean();
+
+    wp_send_json_success( array( 'html' => $html ) );
+}
+
+
+
+// Enqueue JS + localisation
+add_action('wp_enqueue_scripts', function() {
+    wp_enqueue_script(
+        'charger-photos',
+        get_stylesheet_directory_uri() . '/js/ajax-photos.js',
+        array('jquery'),
+        null,
+        true
+    );
+
+    wp_localize_script('charger-photos', 'mon_ajax', array(
+        'ajax_url' => admin_url('admin-ajax.php'),
+        'nonce'    => wp_create_nonce('charger_photos_nonce'),
+    ));
+});
+
+// Actions AJAX
+add_action('wp_ajax_charger_photos', 'charger_photos');
+add_action('wp_ajax_nopriv_charger_photos', 'charger_photos');
+
+function charger_photos() {
+    check_ajax_referer('charger_photos_nonce', 'nonce');
+
+    // IDs déjà affichés
+    $excluded_ids = !empty($_POST['excluded']) ? array_map('intval', explode(',', $_POST['excluded'])) : [];
+
+    // Récupère 8 photos suivantes
+    $args = array(
+        'post_type'      => 'photo',
+        'post_status'    => 'publish',
+        'posts_per_page' => 8,
         'post__not_in'   => $excluded_ids,
     );
 
-    $my_query = new WP_Query($args);
+    $query = new WP_Query($args);
+    ob_start();
+    $new_ids = [];
 
-    ob_start(); // Capture du HTML
-
-    if ($my_query->have_posts()) :
-        while ($my_query->have_posts()) :
-            $my_query->the_post();
+    if ($query->have_posts()) :
+        while ($query->have_posts()) : $query->the_post();
             if (has_post_thumbnail()) {
-                echo '<a href="' . get_permalink() . '">';
-                the_post_thumbnail('medium');
+                $new_ids[] = get_the_ID();
+                $year = get_the_date('Y');
+                $categories = get_the_terms(get_the_ID(), 'categorie');
+                $categories_list = '';
+                if ($categories && !is_wp_error($categories)) {
+                    $cats = wp_list_pluck($categories, 'name');
+                    $categories_list = implode(', ', $cats);
+                }
+                
+                echo '<a href="' . esc_url(get_permalink()) . '" class="image-galerie" data-year="' . esc_attr($year) . '">';
+                echo get_the_post_thumbnail(get_the_ID(), 'medium', array('class' => 'images-galerie'));
+                echo '<div class="overlay">
+                        <h3 class="titre-photo">' . esc_html(get_the_title()) . '</h3>
+                        <p class="categorie-photo">' . esc_html($categories_list) . '</p> 
+                        <div class="icones">
+                            <span class="icone-oeil"><i class="fa-regular fa-eye"></i></span>
+                            <span class="icone-grand-ecran"><i class="fa fa-expand"></i></span>
+                        </div>
+                      </div>';
                 echo '</a>';
             }
         endwhile;
     endif;
 
-    wp_reset_postdata();
+    // On fusionne l'ancien excluded avec les new_ids
+    $excluded_final = array_merge($excluded_ids, $new_ids);
 
-
-    $html = ob_get_clean();
-
-    // 3. Retour en JSON
-    wp_send_json_success(['html' => $html]);
+    wp_send_json_success(array(
+        'html'     => ob_get_clean(),
+        'excluded' => implode(',', $excluded_final),
+    ));
 }
+
 
 // Ajouter une page d'administration au menu
 function nataliemota_add_admin_pages() {
@@ -172,3 +299,9 @@ function nataliemota_customize_register($wp_customize) {
     ));
 }
 add_action('customize_register', 'nataliemota_customize_register');
+
+function mytheme_enqueue_font_awesome() {
+        wp_enqueue_style( 'font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css', array(), '6.5.2', 'all' );
+    }
+
+add_action('wp_enqueue_scripts', 'mytheme_enqueue_font_awesome');

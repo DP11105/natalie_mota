@@ -26,3 +26,130 @@
 [13-Aug-2025 18:10:10 UTC] PHP Warning:  Use of undefined constant get - assumed 'get' (this will throw an Error in a future version of PHP) in C:\xampp\htdocs\natalie_mota\wordpress\wp-content\themes\natalie-mota\front-page.php on line 18
 [13-Aug-2025 18:11:18 UTC] PHP Notice:  Undefined index: excluded_ids in C:\xampp\htdocs\natalie_mota\wordpress\wp-content\themes\natalie-mota\functions.php on line 56
 [13-Aug-2025 18:20:21 UTC] PHP Notice:  Undefined index: excluded_ids in C:\xampp\htdocs\natalie_mota\wordpress\wp-content\themes\natalie-mota\functions.php on line 56
+[13-Aug-2025 23:33:37 UTC] PHP Notice:  Undefined index: excluded_ids in C:\xampp\htdocs\natalie_mota\wordpress\wp-content\themes\natalie-mota\functions.php on line 56
+[13-Aug-2025 23:43:13 UTC] PHP Notice:  Undefined index: excluded_ids in C:\xampp\htdocs\natalie_mota\wordpress\wp-content\themes\natalie-mota\functions.php on line 56
+[14-Aug-2025 02:30:35 UTC] PHP Notice:  Undefined index: excluded_ids in C:\xampp\htdocs\natalie_mota\wordpress\wp-content\themes\natalie-mota\functions.php on line 56
+[14-Aug-2025 02:49:52 UTC] PHP Notice:  Undefined variable: excluded_str in C:\xampp\htdocs\natalie_mota\wordpress\wp-content\themes\natalie-mota\front-page.php on line 104
+[14-Aug-2025 02:51:05 UTC] PHP Notice:  Undefined variable: excluded_str in C:\xampp\htdocs\natalie_mota\wordpress\wp-content\themes\natalie-mota\front-page.php on line 104
+[14-Aug-2025 15:52:44 UTC] PHP Notice:  Undefined variable: excluded_str in C:\xampp\htdocs\natalie_mota\wordpress\wp-content\themes\natalie-mota\front-page.php on line 104
+[14-Aug-2025 15:52:48 UTC] Automatic updates starting...
+[14-Aug-2025 15:52:48 UTC]   Automatic plugin updates starting...
+[14-Aug-2025 15:52:48 UTC]   Automatic plugin updates complete.
+[14-Aug-2025 15:52:49 UTC]   Automatic theme updates starting...
+[14-Aug-2025 15:52:49 UTC]   Automatic theme updates complete.
+[14-Aug-2025 15:52:49 UTC] Automatic updates complete.
+[14-Aug-2025 15:54:40 UTC] PHP Notice:  Undefined variable: excluded_str in C:\xampp\htdocs\natalie_mota\wordpress\wp-content\themes\natalie-mota\front-page.php on line 104
+[14-Aug-2025 15:55:33 UTC] PHP Notice:  Undefined variable: excluded_str in C:\xampp\htdocs\natalie_mota\wordpress\wp-content\themes\natalie-mota\front-page.php on line 104
+[14-Aug-2025 20:33:45 UTC] Automatic updates starting...
+[14-Aug-2025 20:33:45 UTC] PHP Notice:  Undefined variable: excluded_str in C:\xampp\htdocs\natalie_mota\wordpress\wp-content\themes\natalie-mota\front-page.php on line 104
+[14-Aug-2025 20:33:45 UTC]   Automatic plugin updates starting...
+[14-Aug-2025 20:33:45 UTC]   Automatic plugin updates complete.
+[14-Aug-2025 20:33:45 UTC]   Automatic theme updates starting...
+[14-Aug-2025 20:33:45 UTC]   Automatic theme updates complete.
+[14-Aug-2025 20:33:45 UTC] Automatic updates complete.
+[14-Aug-2025 20:44:17 UTC] PHP Notice:  Undefined variable: excluded_str in C:\xampp\htdocs\natalie_mota\wordpress\wp-content\themes\natalie-mota\front-page.php on line 104
+[15-Aug-2025 01:37:02 UTC] PHP Notice:  Undefined variable: excluded_str in C:\xampp\htdocs\natalie_mota\wordpress\wp-content\themes\natalie-mota\front-page.php on line 104
+[15-Aug-2025 01:37:11 UTC] PHP Notice:  Undefined variable: excluded_str in C:\xampp\htdocs\natalie_mota\wordpress\wp-content\themes\natalie-mota\front-page.php on line 104
+[15-Aug-2025 01:38:14 UTC] PHP Notice:  Undefined variable: excluded_str in C:\xampp\htdocs\natalie_mota\wordpress\wp-content\themes\natalie-mota\front-page.php on line 104
+[15-Aug-2025 01:39:36 UTC] PHP Notice:  Undefined variable: excluded_str in C:\xampp\htdocs\natalie_mota\wordpress\wp-content\themes\natalie-mota\front-page.php on line 104
+[15-Aug-2025 01:40:08 UTC] PHP Notice:  Undefined variable: excluded_str in C:\xampp\htdocs\natalie_mota\wordpress\wp-content\themes\natalie-mota\front-page.php on line 104
+[15-Aug-2025 15:04:25 UTC] Automatic updates starting...
+[15-Aug-2025 15:04:26 UTC]   Automatic plugin updates starting...
+[15-Aug-2025 15:04:26 UTC]   Automatic plugin updates complete.
+[15-Aug-2025 15:04:26 UTC]   Automatic theme updates starting...
+[15-Aug-2025 15:04:26 UTC]   Automatic theme updates complete.
+[15-Aug-2025 15:04:26 UTC] Automatic updates complete.
+[15-Aug-2025 15:52:06 UTC] PHP Notice:  Undefined variable: years in C:\xampp\htdocs\natalie_mota\wordpress\wp-content\themes\natalie-mota\front-page.php on line 53
+[15-Aug-2025 15:52:06 UTC] PHP Warning:  Invalid argument supplied for foreach() in C:\xampp\htdocs\natalie_mota\wordpress\wp-content\themes\natalie-mota\front-page.php on line 53
+[15-Aug-2025 17:00:59 UTC] PHP Parse error:  syntax error, unexpected end of file in C:\xampp\htdocs\natalie_mota\wordpress\wp-content\themes\natalie-mota\functions.php on line 195
+[15-Aug-2025 17:03:00 UTC] PHP Notice:  Undefined variable: q in C:\xampp\htdocs\natalie_mota\wordpress\wp-content\themes\natalie-mota\functions.php on line 73
+[15-Aug-2025 17:03:00 UTC] PHP Fatal error:  Uncaught Error: Call to a member function have_posts() on null in C:\xampp\htdocs\natalie_mota\wordpress\wp-content\themes\natalie-mota\functions.php:73
+Stack trace:
+#0 C:\xampp\htdocs\natalie_mota\wordpress\wp-includes\class-wp-hook.php(324): filtrer_photos_callback('')
+#1 C:\xampp\htdocs\natalie_mota\wordpress\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#2 C:\xampp\htdocs\natalie_mota\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#3 C:\xampp\htdocs\natalie_mota\wordpress\wp-admin\admin-ajax.php(192): do_action('wp_ajax_filtrer...')
+#4 {main}
+  thrown in C:\xampp\htdocs\natalie_mota\wordpress\wp-content\themes\natalie-mota\functions.php on line 73
+[15-Aug-2025 17:03:18 UTC] PHP Notice:  Undefined variable: q in C:\xampp\htdocs\natalie_mota\wordpress\wp-content\themes\natalie-mota\functions.php on line 73
+[15-Aug-2025 17:03:18 UTC] PHP Fatal error:  Uncaught Error: Call to a member function have_posts() on null in C:\xampp\htdocs\natalie_mota\wordpress\wp-content\themes\natalie-mota\functions.php:73
+Stack trace:
+#0 C:\xampp\htdocs\natalie_mota\wordpress\wp-settings.php(695): include()
+#1 C:\xampp\htdocs\natalie_mota\wordpress\wp-config.php(104): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\natalie_mota\wordpress\wp-load.php(50): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\natalie_mota\wordpress\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\natalie_mota\wordpress\index.php(17): require('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\natalie_mota\wordpress\wp-content\themes\natalie-mota\functions.php on line 73
+[15-Aug-2025 17:30:30 UTC] PHP Parse error:  syntax error, unexpected '<', expecting end of file in C:\xampp\htdocs\natalie_mota\wordpress\wp-content\themes\natalie-mota\functions.php on line 30
+[15-Aug-2025 17:31:04 UTC] Automatic updates starting...
+[15-Aug-2025 17:31:04 UTC]   Automatic plugin updates starting...
+[15-Aug-2025 17:31:04 UTC]   Automatic plugin updates complete.
+[15-Aug-2025 17:31:04 UTC]   Automatic theme updates starting...
+[15-Aug-2025 17:31:04 UTC]   Automatic theme updates complete.
+[15-Aug-2025 17:31:04 UTC] Automatic updates complete.
+[15-Aug-2025 22:15:34 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'charger_photos' not found or invalid function name in C:\xampp\htdocs\natalie_mota\wordpress\wp-includes\class-wp-hook.php on line 324
+[15-Aug-2025 22:16:24 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'charger_photos' not found or invalid function name in C:\xampp\htdocs\natalie_mota\wordpress\wp-includes\class-wp-hook.php on line 324
+[16-Aug-2025 02:56:46 UTC] PHP Notice:  Array to string conversion in C:\xampp\htdocs\natalie_mota\wordpress\wp-includes\formatting.php on line 1096
+[16-Aug-2025 02:56:46 UTC] PHP Notice:  Array to string conversion in C:\xampp\htdocs\natalie_mota\wordpress\wp-includes\formatting.php on line 1096
+[16-Aug-2025 02:56:46 UTC] PHP Notice:  Array to string conversion in C:\xampp\htdocs\natalie_mota\wordpress\wp-includes\formatting.php on line 1096
+[16-Aug-2025 02:56:46 UTC] PHP Notice:  Array to string conversion in C:\xampp\htdocs\natalie_mota\wordpress\wp-includes\formatting.php on line 1096
+[16-Aug-2025 02:56:46 UTC] PHP Notice:  Array to string conversion in C:\xampp\htdocs\natalie_mota\wordpress\wp-includes\formatting.php on line 1096
+[16-Aug-2025 02:56:46 UTC] PHP Notice:  Array to string conversion in C:\xampp\htdocs\natalie_mota\wordpress\wp-includes\formatting.php on line 1096
+[16-Aug-2025 02:56:46 UTC] PHP Notice:  Array to string conversion in C:\xampp\htdocs\natalie_mota\wordpress\wp-includes\formatting.php on line 1096
+[16-Aug-2025 02:56:46 UTC] PHP Notice:  Array to string conversion in C:\xampp\htdocs\natalie_mota\wordpress\wp-includes\formatting.php on line 1096
+[16-Aug-2025 02:56:46 UTC] PHP Notice:  Array to string conversion in C:\xampp\htdocs\natalie_mota\wordpress\wp-includes\formatting.php on line 1096
+[16-Aug-2025 02:56:46 UTC] PHP Notice:  Array to string conversion in C:\xampp\htdocs\natalie_mota\wordpress\wp-includes\formatting.php on line 1096
+[16-Aug-2025 02:56:46 UTC] PHP Notice:  Array to string conversion in C:\xampp\htdocs\natalie_mota\wordpress\wp-includes\formatting.php on line 1096
+[16-Aug-2025 02:56:46 UTC] PHP Notice:  Array to string conversion in C:\xampp\htdocs\natalie_mota\wordpress\wp-includes\formatting.php on line 1096
+[16-Aug-2025 02:56:46 UTC] PHP Notice:  Array to string conversion in C:\xampp\htdocs\natalie_mota\wordpress\wp-includes\formatting.php on line 1096
+[16-Aug-2025 02:56:46 UTC] PHP Notice:  Array to string conversion in C:\xampp\htdocs\natalie_mota\wordpress\wp-includes\formatting.php on line 1096
+[16-Aug-2025 02:56:46 UTC] PHP Notice:  Array to string conversion in C:\xampp\htdocs\natalie_mota\wordpress\wp-includes\formatting.php on line 1096
+[16-Aug-2025 02:56:46 UTC] PHP Notice:  Array to string conversion in C:\xampp\htdocs\natalie_mota\wordpress\wp-includes\formatting.php on line 1096
+[16-Aug-2025 16:23:59 UTC] Automatic updates starting...
+[16-Aug-2025 16:24:00 UTC]   Automatic plugin updates starting...
+[16-Aug-2025 16:24:00 UTC]   Automatic plugin updates complete.
+[16-Aug-2025 16:24:00 UTC]   Automatic theme updates starting...
+[16-Aug-2025 16:24:00 UTC]   Automatic theme updates complete.
+[16-Aug-2025 16:24:00 UTC] Automatic updates complete.
+[17-Aug-2025 07:09:24 UTC] Automatic updates starting...
+[17-Aug-2025 07:09:25 UTC]   Automatic plugin updates starting...
+[17-Aug-2025 07:09:25 UTC]   Automatic plugin updates complete.
+[17-Aug-2025 07:09:25 UTC]   Automatic theme updates starting...
+[17-Aug-2025 07:09:25 UTC]   Automatic theme updates complete.
+[17-Aug-2025 07:09:25 UTC] Automatic updates complete.
+[17-Aug-2025 07:09:47 UTC] PHP Notice:  Array to string conversion in C:\xampp\htdocs\natalie_mota\wordpress\wp-includes\formatting.php on line 1096
+[17-Aug-2025 07:09:47 UTC] PHP Notice:  Array to string conversion in C:\xampp\htdocs\natalie_mota\wordpress\wp-includes\formatting.php on line 1096
+[17-Aug-2025 07:09:47 UTC] PHP Notice:  Array to string conversion in C:\xampp\htdocs\natalie_mota\wordpress\wp-includes\formatting.php on line 1096
+[17-Aug-2025 07:09:47 UTC] PHP Notice:  Array to string conversion in C:\xampp\htdocs\natalie_mota\wordpress\wp-includes\formatting.php on line 1096
+[17-Aug-2025 07:09:47 UTC] PHP Notice:  Array to string conversion in C:\xampp\htdocs\natalie_mota\wordpress\wp-includes\formatting.php on line 1096
+[17-Aug-2025 07:09:47 UTC] PHP Notice:  Array to string conversion in C:\xampp\htdocs\natalie_mota\wordpress\wp-includes\formatting.php on line 1096
+[17-Aug-2025 07:09:47 UTC] PHP Notice:  Array to string conversion in C:\xampp\htdocs\natalie_mota\wordpress\wp-includes\formatting.php on line 1096
+[17-Aug-2025 07:09:47 UTC] PHP Notice:  Array to string conversion in C:\xampp\htdocs\natalie_mota\wordpress\wp-includes\formatting.php on line 1096
+[17-Aug-2025 07:09:47 UTC] PHP Notice:  Array to string conversion in C:\xampp\htdocs\natalie_mota\wordpress\wp-includes\formatting.php on line 1096
+[17-Aug-2025 07:09:47 UTC] PHP Notice:  Array to string conversion in C:\xampp\htdocs\natalie_mota\wordpress\wp-includes\formatting.php on line 1096
+[17-Aug-2025 07:09:47 UTC] PHP Notice:  Array to string conversion in C:\xampp\htdocs\natalie_mota\wordpress\wp-includes\formatting.php on line 1096
+[17-Aug-2025 07:09:47 UTC] PHP Notice:  Array to string conversion in C:\xampp\htdocs\natalie_mota\wordpress\wp-includes\formatting.php on line 1096
+[17-Aug-2025 07:09:47 UTC] PHP Notice:  Array to string conversion in C:\xampp\htdocs\natalie_mota\wordpress\wp-includes\formatting.php on line 1096
+[17-Aug-2025 07:09:47 UTC] PHP Notice:  Array to string conversion in C:\xampp\htdocs\natalie_mota\wordpress\wp-includes\formatting.php on line 1096
+[17-Aug-2025 07:09:47 UTC] PHP Notice:  Array to string conversion in C:\xampp\htdocs\natalie_mota\wordpress\wp-includes\formatting.php on line 1096
+[17-Aug-2025 07:09:47 UTC] PHP Notice:  Array to string conversion in C:\xampp\htdocs\natalie_mota\wordpress\wp-includes\formatting.php on line 1096
+[18-Aug-2025 00:21:52 UTC] Automatic updates starting...
+[18-Aug-2025 00:21:52 UTC]   Automatic plugin updates starting...
+[18-Aug-2025 00:21:52 UTC]   Automatic plugin updates complete.
+[18-Aug-2025 00:21:52 UTC]   Automatic theme updates starting...
+[18-Aug-2025 00:21:52 UTC]   Automatic theme updates complete.
+[18-Aug-2025 00:21:52 UTC] Automatic updates complete.
+[18-Aug-2025 15:43:51 UTC] Automatic updates starting...
+[18-Aug-2025 15:43:52 UTC]   Automatic plugin updates starting...
+[18-Aug-2025 15:43:52 UTC]   Automatic plugin updates complete.
+[18-Aug-2025 15:43:52 UTC]   Automatic theme updates starting...
+[18-Aug-2025 15:43:52 UTC]   Automatic theme updates complete.
+[18-Aug-2025 15:43:52 UTC] Automatic updates complete.
+[18-Aug-2025 17:22:54 UTC] Automatic updates starting...
+[18-Aug-2025 17:22:54 UTC]   Automatic plugin updates starting...
+[18-Aug-2025 17:22:54 UTC]   Automatic plugin updates complete.
+[18-Aug-2025 17:22:54 UTC]   Automatic theme updates starting...
+[18-Aug-2025 17:22:54 UTC]   Automatic theme updates complete.
+[18-Aug-2025 17:22:54 UTC] Automatic updates complete.
+[18-Aug-2025 17:44:08 UTC] PHP Notice:  Trying to get property 'title' of non-object in C:\xampp\htdocs\natalie_mota\wordpress\wp-includes\class-wp-customize-widgets.php on line 926

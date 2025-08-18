@@ -53,7 +53,7 @@
     ?>
 
     <div class="select1">
-        <select>
+        <select id="filter-categorie">
             <option value="">CATÉGORIES</option>
              <?php foreach ($categories as $cat): ?>
                 <option value="<?php echo esc_attr($cat->slug); ?>">
@@ -61,7 +61,7 @@
                 </option>
             <?php endforeach; ?>
         </select>
-        <select> 
+        <select id="filter-format">  
            <option value="">FORMATS</option>
            <?php foreach ($formats as $fmt): ?>
                 <option value="<?php echo esc_attr($fmt->slug); ?>">
@@ -71,55 +71,70 @@
         </select>
     </div>
     <div class="select2">
-        <select>
+        <select id="filter-year">
             <option value="">TRIER PAR</option>
             <?php foreach ($years as $year): ?>
                 <option value="<?php echo esc_attr($year); ?>"><?php echo esc_html($year); ?></option>
             <?php endforeach; ?>
         </select>
     </div>
-    <div class="liste-photos">
-        <?php
-        // 1. Première requête → 8 photos aléatoires
-        $args_first = array(
-            'post_type'      => 'photo',
-            'orderby'        => 'rand',
-            'posts_per_page' => 8,
-        );
+    <?php
+// 1) Zone d'affichage initiale
+echo '<div id="zone-photos">';
 
-        $my_query_first = new WP_Query($args_first);
+$images = new WP_Query([
+    'post_type'      => 'photo',
+    'post_status'    => 'publish',
+    'posts_per_page' => 8,
+    
+]);
 
-        $excluded_ids = array(); // tableau pour stocker les IDs
+$excluded_ids = [];
 
-        echo '<div id="zone-photos" data-excluded="">';
+if ($images->have_posts()) :
+    while ($images->have_posts()) : $images->the_post();
+        if (has_post_thumbnail()) {
+            $excluded_ids[] = get_the_ID();
+            $year = get_the_date('Y');
 
-        if ($my_query_first->have_posts()) :
-            while ($my_query_first->have_posts()) :
-                $my_query_first->the_post();
+            // Récupération des catégories (taxonomy "categorie")
+            $categories = get_the_terms(get_the_ID(), 'categorie');
+            $categories_list = '';
+            if ($categories && !is_wp_error($categories)) {
+                $cats = wp_list_pluck($categories, 'name');
+                $categories_list = implode(', ', $cats);
+            }
 
-                // On garde l'ID en mémoire
-                $excluded_ids[] = get_the_ID();
+            echo '<a href="' . esc_url(get_permalink()) . '" 
+                    class="image-galerie" 
+                    data-year="' . esc_attr($year) . '">';
 
-                if (has_post_thumbnail()) {
-                    echo '<a href="' . get_permalink() . '">';
-                    the_post_thumbnail('medium');
-                    echo '</a>';
-                }
+            // Image
+            the_post_thumbnail('medium', array('class' => 'images-galerie'));
 
-            endwhile;
-        endif;
+            // Overlay au survol
+            echo '<div class="overlay">
+                    <h3 class="titre-photo">' . esc_html(get_the_title()) . '</h3>
+                    <p class="categorie-photo">' . esc_html($categories_list) . '</p>
+                    <div class="icones">
+                        <span class="icone-oeil"><i class="fa-regular fa-eye"></i></span>
+                        <span class="icone-grand-ecran"><i class="fa fa-expand"></i></span>
+                    </div>
+                  </div>';
 
-        wp_reset_postdata();
+            echo '</a>';
+        }
+    endwhile;
+endif;
+wp_reset_postdata();
 
-        echo '</div>';
+echo '</div>'; // #zone-photos
 
-        // On passe les IDs exclus dans un attribut HTML pour le JS
-        $excluded_str = implode(',', $excluded_ids);
+// 2) Bouton "Charger plus" avec la liste d'IDs déjà affichés
+$excluded_str = implode(',', $excluded_ids);
+echo '<button id="btn-charger" data-excluded="' . esc_attr($excluded_str) . '">Charger plus</button>';
+?>
 
-        echo '<button id="btn-charger" data-excluded="' . esc_attr($excluded_str) . '">Charger plus</button>';
-        ?>
-        
-    </div>
 </main>
 
 <?php get_footer(); ?>
