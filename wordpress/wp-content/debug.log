@@ -153,3 +153,520 @@ Stack trace:
 [18-Aug-2025 17:22:54 UTC]   Automatic theme updates complete.
 [18-Aug-2025 17:22:54 UTC] Automatic updates complete.
 [18-Aug-2025 17:44:08 UTC] PHP Notice:  Trying to get property 'title' of non-object in C:\xampp\htdocs\natalie_mota\wordpress\wp-includes\class-wp-customize-widgets.php on line 926
+[18-Aug-2025 21:50:24 UTC] PHP Notice:  Undefined variable: excluded_final in C:\xampp\htdocs\natalie_mota\wordpress\wp-content\themes\natalie-mota\functions.php on line 173
+[18-Aug-2025 21:50:24 UTC] EXCLUDED IDS: 59,57,55,53,51,49,47,45
+[18-Aug-2025 21:50:25 UTC] PHP Notice:  Undefined variable: excluded_final in C:\xampp\htdocs\natalie_mota\wordpress\wp-content\themes\natalie-mota\functions.php on line 173
+[18-Aug-2025 21:50:25 UTC] EXCLUDED IDS: 59,57,55,53,51,49,47,45
+[18-Aug-2025 21:50:58 UTC] PHP Notice:  Undefined variable: new_ids in C:\xampp\htdocs\natalie_mota\wordpress\wp-content\themes\natalie-mota\functions.php on line 173
+[18-Aug-2025 21:50:58 UTC] EXCLUDED IDS: 59,57,55,53,51,49,47,45
+[18-Aug-2025 21:50:58 UTC] PHP Notice:  Undefined variable: new_ids in C:\xampp\htdocs\natalie_mota\wordpress\wp-content\themes\natalie-mota\functions.php on line 173
+[18-Aug-2025 21:50:58 UTC] EXCLUDED IDS: 59,57,55,53,51,49,47,45
+[18-Aug-2025 21:51:13 UTC] EXCLUDED IDS: 59,57,55,53,51,49,47,45
+[18-Aug-2025 21:51:13 UTC] EXCLUDED IDS: 59,57,55,53,51,49,47,45
+[18-Aug-2025 21:51:30 UTC] PHP Notice:  Undefined variable: new_ids in C:\xampp\htdocs\natalie_mota\wordpress\wp-content\themes\natalie-mota\functions.php on line 173
+[18-Aug-2025 21:51:30 UTC] EXCLUDED IDS: 59,57,55,53,51,49,47,45
+[18-Aug-2025 21:51:30 UTC] PHP Notice:  Undefined variable: new_ids in C:\xampp\htdocs\natalie_mota\wordpress\wp-content\themes\natalie-mota\functions.php on line 173
+[18-Aug-2025 21:51:30 UTC] EXCLUDED IDS: 59,57,55,53,51,49,47,45
+[18-Aug-2025 21:51:42 UTC] PHP Notice:  Undefined variable: new_ids in C:\xampp\htdocs\natalie_mota\wordpress\wp-content\themes\natalie-mota\functions.php on line 173
+[18-Aug-2025 21:51:42 UTC] EXCLUDED IDS: 59,57,55,53,51,49,47,45
+[18-Aug-2025 21:51:42 UTC] PHP Notice:  Undefined variable: new_ids in C:\xampp\htdocs\natalie_mota\wordpress\wp-content\themes\natalie-mota\functions.php on line 173
+[18-Aug-2025 21:51:42 UTC] EXCLUDED IDS: 59,57,55,53,51,49,47,45
+[18-Aug-2025 21:53:26 UTC] EXCLUDED IDS: 59,57,55,53,51,49,47,45
+[18-Aug-2025 21:53:26 UTC] EXCLUDED IDS: 59,57,55,53,51,49,47,45
+[18-Aug-2025 21:54:04 UTC] EXCLUDED IDS: 59,57,55,53,51,49
+[18-Aug-2025 21:54:04 UTC] EXCLUDED IDS: 59,57,55,53,51,49
+[18-Aug-2025 21:54:55 UTC] EXCLUDED IDS: 
+[18-Aug-2025 21:54:55 UTC] EXCLUDED IDS: 
+[18-Aug-2025 21:55:38 UTC] EXCLUDED IDS: 59,57,55,53,51,49,47,45
+[18-Aug-2025 21:55:38 UTC] EXCLUDED IDS: 59,57,55,53,51,49,47,45
+[18-Aug-2025 21:56:37 UTC] EXCLUDED IDS: 59,57,55,53,51,49,47,45
+[18-Aug-2025 21:56:37 UTC] LOADED ID: 39
+[18-Aug-2025 21:56:37 UTC] EXCLUDED IDS: 59,57,55,53,51,49,47,45
+[18-Aug-2025 21:56:37 UTC] LOADED ID: 33
+[18-Aug-2025 21:56:37 UTC] LOADED ID: 41
+[18-Aug-2025 21:56:37 UTC] LOADED ID: 37
+[18-Aug-2025 21:56:37 UTC] LOADED ID: 31
+[18-Aug-2025 21:56:37 UTC] LOADED ID: 39
+[18-Aug-2025 21:56:37 UTC] LOADED ID: 43
+[18-Aug-2025 21:56:37 UTC] LOADED ID: 33
+[18-Aug-2025 21:56:37 UTC] LOADED ID: 35
+[18-Aug-2025 21:56:37 UTC] LOADED ID: 41
+[18-Aug-2025 21:56:37 UTC] LOADED ID: 28
+[18-Aug-2025 21:56:37 UTC] LOADED ID: 37
+[18-Aug-2025 21:56:37 UTC] LOADED ID: 31
+[18-Aug-2025 21:56:37 UTC] LOADED ID: 43
+[18-Aug-2025 21:56:37 UTC] LOADED ID: 35
+[18-Aug-2025 21:56:37 UTC] LOADED ID: 28
+[18-Aug-2025 22:01:49 UTC] EXCLUDED IDS: 59,57,55,53,51,49,47,45
+[18-Aug-2025 22:01:49 UTC] LOADED ID: 39
+[18-Aug-2025 22:01:49 UTC] LOADED ID: 33
+[18-Aug-2025 22:01:49 UTC] EXCLUDED IDS: 59,57,55,53,51,49,47,45
+[18-Aug-2025 22:01:49 UTC] LOADED ID: 41
+[18-Aug-2025 22:01:49 UTC] LOADED ID: 37
+[18-Aug-2025 22:01:49 UTC] LOADED ID: 31
+[18-Aug-2025 22:01:49 UTC] LOADED ID: 39
+[18-Aug-2025 22:01:49 UTC] LOADED ID: 43
+[18-Aug-2025 22:01:49 UTC] LOADED ID: 33
+[18-Aug-2025 22:01:49 UTC] LOADED ID: 35
+[18-Aug-2025 22:01:49 UTC] LOADED ID: 41
+[18-Aug-2025 22:01:49 UTC] LOADED ID: 28
+[18-Aug-2025 22:01:49 UTC] LOADED ID: 37
+[18-Aug-2025 22:01:49 UTC] LOADED ID: 31
+[18-Aug-2025 22:01:49 UTC] LOADED ID: 43
+[18-Aug-2025 22:01:49 UTC] LOADED ID: 35
+[18-Aug-2025 22:01:49 UTC] LOADED ID: 28
+[18-Aug-2025 22:02:12 UTC] EXCLUDED IDS: 59,57,55,53,51,49,47,45
+[18-Aug-2025 22:02:12 UTC] LOADED ID: 39
+[18-Aug-2025 22:02:12 UTC] LOADED ID: 33
+[18-Aug-2025 22:02:12 UTC] LOADED ID: 41
+[18-Aug-2025 22:02:12 UTC] EXCLUDED IDS: 59,57,55,53,51,49,47,45
+[18-Aug-2025 22:02:12 UTC] LOADED ID: 37
+[18-Aug-2025 22:02:12 UTC] LOADED ID: 31
+[18-Aug-2025 22:02:12 UTC] LOADED ID: 43
+[18-Aug-2025 22:02:12 UTC] LOADED ID: 35
+[18-Aug-2025 22:02:12 UTC] LOADED ID: 39
+[18-Aug-2025 22:02:12 UTC] LOADED ID: 28
+[18-Aug-2025 22:02:12 UTC] LOADED ID: 33
+[18-Aug-2025 22:02:12 UTC] LOADED ID: 41
+[18-Aug-2025 22:02:12 UTC] LOADED ID: 37
+[18-Aug-2025 22:02:12 UTC] LOADED ID: 31
+[18-Aug-2025 22:02:12 UTC] LOADED ID: 43
+[18-Aug-2025 22:02:12 UTC] LOADED ID: 35
+[18-Aug-2025 22:02:12 UTC] LOADED ID: 28
+[18-Aug-2025 22:03:06 UTC] EXCLUDED IDS: 59,57,55,53,51,49,47,45
+[18-Aug-2025 22:03:06 UTC] Returned IDs: 39,33,41,37,31,43,35,28
+[18-Aug-2025 22:03:06 UTC] LOADED ID: 39
+[18-Aug-2025 22:03:06 UTC] LOADED ID: 33
+[18-Aug-2025 22:03:06 UTC] LOADED ID: 41
+[18-Aug-2025 22:03:06 UTC] LOADED ID: 37
+[18-Aug-2025 22:03:06 UTC] EXCLUDED IDS: 59,57,55,53,51,49,47,45
+[18-Aug-2025 22:03:06 UTC] LOADED ID: 31
+[18-Aug-2025 22:03:06 UTC] Returned IDs: 39,33,41,37,31,43,35,28
+[18-Aug-2025 22:03:06 UTC] LOADED ID: 43
+[18-Aug-2025 22:03:06 UTC] LOADED ID: 35
+[18-Aug-2025 22:03:06 UTC] LOADED ID: 28
+[18-Aug-2025 22:03:06 UTC] LOADED ID: 39
+[18-Aug-2025 22:03:06 UTC] LOADED ID: 33
+[18-Aug-2025 22:03:06 UTC] LOADED ID: 41
+[18-Aug-2025 22:03:06 UTC] LOADED ID: 37
+[18-Aug-2025 22:03:06 UTC] LOADED ID: 31
+[18-Aug-2025 22:03:06 UTC] LOADED ID: 43
+[18-Aug-2025 22:03:06 UTC] LOADED ID: 35
+[18-Aug-2025 22:03:06 UTC] LOADED ID: 28
+[18-Aug-2025 22:09:07 UTC] EXCLUDED IDS: 59,57,55,53,51,49,47,45
+[18-Aug-2025 22:09:07 UTC] Returned IDs: 39,33,41,37,31,43,35,28
+[18-Aug-2025 22:09:07 UTC] EXCLUDED IDS: 59,57,55,53,51,49,47,45
+[18-Aug-2025 22:09:07 UTC] Returned IDs: 39,33,41,37,31,43,35,28
+[18-Aug-2025 22:09:07 UTC] LOADED ID: 39
+[18-Aug-2025 22:09:07 UTC] LOADED ID: 39
+[18-Aug-2025 22:09:07 UTC] LOADED ID: 33
+[18-Aug-2025 22:09:07 UTC] LOADED ID: 41
+[18-Aug-2025 22:09:07 UTC] LOADED ID: 33
+[18-Aug-2025 22:09:07 UTC] LOADED ID: 41
+[18-Aug-2025 22:09:07 UTC] LOADED ID: 37
+[18-Aug-2025 22:09:07 UTC] LOADED ID: 31
+[18-Aug-2025 22:09:07 UTC] LOADED ID: 37
+[18-Aug-2025 22:09:07 UTC] LOADED ID: 43
+[18-Aug-2025 22:09:07 UTC] LOADED ID: 31
+[18-Aug-2025 22:09:07 UTC] LOADED ID: 35
+[18-Aug-2025 22:09:07 UTC] LOADED ID: 43
+[18-Aug-2025 22:09:07 UTC] LOADED ID: 35
+[18-Aug-2025 22:09:07 UTC] LOADED ID: 28
+[18-Aug-2025 22:09:07 UTC] LOADED ID: 28
+[18-Aug-2025 22:13:27 UTC] EXCLUDED IDS: 59,57,55,53,51,49,47,45
+[18-Aug-2025 22:13:27 UTC] EXCLUDED IDS: 59,57,55,53,51,49,47,45
+[18-Aug-2025 22:13:27 UTC] PHP Fatal error:  Uncaught Error: Object of class WP_Post could not be converted to string in C:\xampp\htdocs\natalie_mota\wordpress\wp-content\themes\natalie-mota\functions.php:181
+Stack trace:
+#0 C:\xampp\htdocs\natalie_mota\wordpress\wp-content\themes\natalie-mota\functions.php(181): implode(',', Array)
+#1 C:\xampp\htdocs\natalie_mota\wordpress\wp-includes\class-wp-hook.php(324): charger_photos('')
+#2 C:\xampp\htdocs\natalie_mota\wordpress\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 C:\xampp\htdocs\natalie_mota\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#4 C:\xampp\htdocs\natalie_mota\wordpress\wp-admin\admin-ajax.php(192): do_action('wp_ajax_charger...')
+#5 {main}
+  thrown in C:\xampp\htdocs\natalie_mota\wordpress\wp-content\themes\natalie-mota\functions.php on line 181
+[18-Aug-2025 22:13:27 UTC] PHP Fatal error:  Uncaught Error: Object of class WP_Post could not be converted to string in C:\xampp\htdocs\natalie_mota\wordpress\wp-content\themes\natalie-mota\functions.php:181
+Stack trace:
+#0 C:\xampp\htdocs\natalie_mota\wordpress\wp-content\themes\natalie-mota\functions.php(181): implode(',', Array)
+#1 C:\xampp\htdocs\natalie_mota\wordpress\wp-includes\class-wp-hook.php(324): charger_photos('')
+#2 C:\xampp\htdocs\natalie_mota\wordpress\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 C:\xampp\htdocs\natalie_mota\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#4 C:\xampp\htdocs\natalie_mota\wordpress\wp-admin\admin-ajax.php(192): do_action('wp_ajax_charger...')
+#5 {main}
+  thrown in C:\xampp\htdocs\natalie_mota\wordpress\wp-content\themes\natalie-mota\functions.php on line 181
+[18-Aug-2025 22:13:29 UTC] EXCLUDED IDS: 59,57,55,53,51,49,47,45
+[18-Aug-2025 22:13:29 UTC] PHP Fatal error:  Uncaught Error: Object of class WP_Post could not be converted to string in C:\xampp\htdocs\natalie_mota\wordpress\wp-content\themes\natalie-mota\functions.php:181
+Stack trace:
+#0 C:\xampp\htdocs\natalie_mota\wordpress\wp-content\themes\natalie-mota\functions.php(181): implode(',', Array)
+#1 C:\xampp\htdocs\natalie_mota\wordpress\wp-includes\class-wp-hook.php(324): charger_photos('')
+#2 C:\xampp\htdocs\natalie_mota\wordpress\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 C:\xampp\htdocs\natalie_mota\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#4 C:\xampp\htdocs\natalie_mota\wordpress\wp-admin\admin-ajax.php(192): do_action('wp_ajax_charger...')
+#5 {main}
+  thrown in C:\xampp\htdocs\natalie_mota\wordpress\wp-content\themes\natalie-mota\functions.php on line 181
+[18-Aug-2025 22:13:29 UTC] EXCLUDED IDS: 59,57,55,53,51,49,47,45
+[18-Aug-2025 22:13:29 UTC] PHP Fatal error:  Uncaught Error: Object of class WP_Post could not be converted to string in C:\xampp\htdocs\natalie_mota\wordpress\wp-content\themes\natalie-mota\functions.php:181
+Stack trace:
+#0 C:\xampp\htdocs\natalie_mota\wordpress\wp-content\themes\natalie-mota\functions.php(181): implode(',', Array)
+#1 C:\xampp\htdocs\natalie_mota\wordpress\wp-includes\class-wp-hook.php(324): charger_photos('')
+#2 C:\xampp\htdocs\natalie_mota\wordpress\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 C:\xampp\htdocs\natalie_mota\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#4 C:\xampp\htdocs\natalie_mota\wordpress\wp-admin\admin-ajax.php(192): do_action('wp_ajax_charger...')
+#5 {main}
+  thrown in C:\xampp\htdocs\natalie_mota\wordpress\wp-content\themes\natalie-mota\functions.php on line 181
+[18-Aug-2025 22:14:50 UTC] EXCLUDED IDS: 59,57,55,53,51,49,47,45
+[18-Aug-2025 22:14:50 UTC] PHP Fatal error:  Uncaught Error: Object of class WP_Post could not be converted to string in C:\xampp\htdocs\natalie_mota\wordpress\wp-content\themes\natalie-mota\functions.php:180
+Stack trace:
+#0 C:\xampp\htdocs\natalie_mota\wordpress\wp-content\themes\natalie-mota\functions.php(180): implode(',', Array)
+#1 C:\xampp\htdocs\natalie_mota\wordpress\wp-includes\class-wp-hook.php(324): charger_photos('')
+#2 C:\xampp\htdocs\natalie_mota\wordpress\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 C:\xampp\htdocs\natalie_mota\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#4 C:\xampp\htdocs\natalie_mota\wordpress\wp-admin\admin-ajax.php(192): do_action('wp_ajax_charger...')
+#5 {main}
+  thrown in C:\xampp\htdocs\natalie_mota\wordpress\wp-content\themes\natalie-mota\functions.php on line 180
+[18-Aug-2025 22:14:50 UTC] EXCLUDED IDS: 59,57,55,53,51,49,47,45
+[18-Aug-2025 22:14:50 UTC] PHP Fatal error:  Uncaught Error: Object of class WP_Post could not be converted to string in C:\xampp\htdocs\natalie_mota\wordpress\wp-content\themes\natalie-mota\functions.php:180
+Stack trace:
+#0 C:\xampp\htdocs\natalie_mota\wordpress\wp-content\themes\natalie-mota\functions.php(180): implode(',', Array)
+#1 C:\xampp\htdocs\natalie_mota\wordpress\wp-includes\class-wp-hook.php(324): charger_photos('')
+#2 C:\xampp\htdocs\natalie_mota\wordpress\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 C:\xampp\htdocs\natalie_mota\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#4 C:\xampp\htdocs\natalie_mota\wordpress\wp-admin\admin-ajax.php(192): do_action('wp_ajax_charger...')
+#5 {main}
+  thrown in C:\xampp\htdocs\natalie_mota\wordpress\wp-content\themes\natalie-mota\functions.php on line 180
+[18-Aug-2025 22:14:51 UTC] EXCLUDED IDS: 59,57,55,53,51,49,47,45
+[18-Aug-2025 22:14:51 UTC] EXCLUDED IDS: 59,57,55,53,51,49,47,45
+[18-Aug-2025 22:14:51 UTC] PHP Fatal error:  Uncaught Error: Object of class WP_Post could not be converted to string in C:\xampp\htdocs\natalie_mota\wordpress\wp-content\themes\natalie-mota\functions.php:180
+Stack trace:
+#0 C:\xampp\htdocs\natalie_mota\wordpress\wp-content\themes\natalie-mota\functions.php(180): implode(',', Array)
+#1 C:\xampp\htdocs\natalie_mota\wordpress\wp-includes\class-wp-hook.php(324): charger_photos('')
+#2 C:\xampp\htdocs\natalie_mota\wordpress\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 C:\xampp\htdocs\natalie_mota\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#4 C:\xampp\htdocs\natalie_mota\wordpress\wp-admin\admin-ajax.php(192): do_action('wp_ajax_charger...')
+#5 {main}
+  thrown in C:\xampp\htdocs\natalie_mota\wordpress\wp-content\themes\natalie-mota\functions.php on line 180
+[18-Aug-2025 22:14:51 UTC] PHP Fatal error:  Uncaught Error: Object of class WP_Post could not be converted to string in C:\xampp\htdocs\natalie_mota\wordpress\wp-content\themes\natalie-mota\functions.php:180
+Stack trace:
+#0 C:\xampp\htdocs\natalie_mota\wordpress\wp-content\themes\natalie-mota\functions.php(180): implode(',', Array)
+#1 C:\xampp\htdocs\natalie_mota\wordpress\wp-includes\class-wp-hook.php(324): charger_photos('')
+#2 C:\xampp\htdocs\natalie_mota\wordpress\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 C:\xampp\htdocs\natalie_mota\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#4 C:\xampp\htdocs\natalie_mota\wordpress\wp-admin\admin-ajax.php(192): do_action('wp_ajax_charger...')
+#5 {main}
+  thrown in C:\xampp\htdocs\natalie_mota\wordpress\wp-content\themes\natalie-mota\functions.php on line 180
+[18-Aug-2025 22:15:26 UTC] EXCLUDED IDS: 59,57,55,53,51,49,47,45
+[18-Aug-2025 22:15:26 UTC] EXCLUDED IDS: 59,57,55,53,51,49,47,45
+[18-Aug-2025 22:15:26 UTC] PHP Fatal error:  Uncaught Error: Object of class WP_Post could not be converted to string in C:\xampp\htdocs\natalie_mota\wordpress\wp-content\themes\natalie-mota\functions.php:179
+Stack trace:
+#0 C:\xampp\htdocs\natalie_mota\wordpress\wp-content\themes\natalie-mota\functions.php(179): implode(',', Array)
+#1 C:\xampp\htdocs\natalie_mota\wordpress\wp-includes\class-wp-hook.php(324): charger_photos('')
+#2 C:\xampp\htdocs\natalie_mota\wordpress\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 C:\xampp\htdocs\natalie_mota\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#4 C:\xampp\htdocs\natalie_mota\wordpress\wp-admin\admin-ajax.php(192): do_action('wp_ajax_charger...')
+#5 {main}
+  thrown in C:\xampp\htdocs\natalie_mota\wordpress\wp-content\themes\natalie-mota\functions.php on line 179
+[18-Aug-2025 22:15:26 UTC] PHP Fatal error:  Uncaught Error: Object of class WP_Post could not be converted to string in C:\xampp\htdocs\natalie_mota\wordpress\wp-content\themes\natalie-mota\functions.php:179
+Stack trace:
+#0 C:\xampp\htdocs\natalie_mota\wordpress\wp-content\themes\natalie-mota\functions.php(179): implode(',', Array)
+#1 C:\xampp\htdocs\natalie_mota\wordpress\wp-includes\class-wp-hook.php(324): charger_photos('')
+#2 C:\xampp\htdocs\natalie_mota\wordpress\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 C:\xampp\htdocs\natalie_mota\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#4 C:\xampp\htdocs\natalie_mota\wordpress\wp-admin\admin-ajax.php(192): do_action('wp_ajax_charger...')
+#5 {main}
+  thrown in C:\xampp\htdocs\natalie_mota\wordpress\wp-content\themes\natalie-mota\functions.php on line 179
+[18-Aug-2025 22:15:53 UTC] EXCLUDED IDS: 59,57,55,53,51,49,47,45
+[18-Aug-2025 22:15:53 UTC] LOADED ID: 39
+[18-Aug-2025 22:15:53 UTC] LOADED ID: 33
+[18-Aug-2025 22:15:53 UTC] EXCLUDED IDS: 59,57,55,53,51,49,47,45
+[18-Aug-2025 22:15:53 UTC] LOADED ID: 41
+[18-Aug-2025 22:15:53 UTC] LOADED ID: 37
+[18-Aug-2025 22:15:53 UTC] LOADED ID: 31
+[18-Aug-2025 22:15:53 UTC] LOADED ID: 39
+[18-Aug-2025 22:15:53 UTC] LOADED ID: 43
+[18-Aug-2025 22:15:53 UTC] LOADED ID: 35
+[18-Aug-2025 22:15:53 UTC] LOADED ID: 33
+[18-Aug-2025 22:15:53 UTC] LOADED ID: 41
+[18-Aug-2025 22:15:53 UTC] LOADED ID: 28
+[18-Aug-2025 22:15:53 UTC] LOADED ID: 37
+[18-Aug-2025 22:15:53 UTC] LOADED ID: 31
+[18-Aug-2025 22:15:53 UTC] LOADED ID: 43
+[18-Aug-2025 22:15:53 UTC] LOADED ID: 35
+[18-Aug-2025 22:15:53 UTC] LOADED ID: 28
+[18-Aug-2025 22:16:10 UTC] EXCLUDED IDS: 59,57,55,53,51,49,47,45
+[18-Aug-2025 22:16:10 UTC] LOADED ID: 39
+[18-Aug-2025 22:16:10 UTC] EXCLUDED IDS: 59,57,55,53,51,49,47,45
+[18-Aug-2025 22:16:10 UTC] LOADED ID: 39
+[18-Aug-2025 22:19:47 UTC] EXCLUDED IDS: 59,57,55,53,51,49,47,45
+[18-Aug-2025 22:19:47 UTC] EXCLUDED IDS: 59,57,55,53,51,49,47,45
+[18-Aug-2025 22:19:47 UTC] LOADED ID: 39
+[18-Aug-2025 22:19:47 UTC] LOADED ID: 39
+[18-Aug-2025 22:21:25 UTC] EXCLUDED IDS: 59,57,55,53,51,49,47,45,39
+[18-Aug-2025 22:21:25 UTC] LOADED ID: 33
+[18-Aug-2025 22:21:25 UTC] EXCLUDED IDS: 59,57,55,53,51,49,47,45,39
+[18-Aug-2025 22:21:25 UTC] LOADED ID: 33
+[18-Aug-2025 22:21:37 UTC] EXCLUDED IDS: 59,57,55,53,51,49,47,45,39,33
+[18-Aug-2025 22:21:37 UTC] LOADED ID: 41
+[18-Aug-2025 22:21:37 UTC] EXCLUDED IDS: 59,57,55,53,51,49,47,45,39,33
+[18-Aug-2025 22:21:37 UTC] LOADED ID: 41
+[18-Aug-2025 22:21:40 UTC] EXCLUDED IDS: 59,57,55,53,51,49,47,45,39,33,41
+[18-Aug-2025 22:21:40 UTC] EXCLUDED IDS: 59,57,55,53,51,49,47,45,39,33,41
+[18-Aug-2025 22:21:40 UTC] LOADED ID: 37
+[18-Aug-2025 22:21:40 UTC] LOADED ID: 37
+[18-Aug-2025 22:21:43 UTC] EXCLUDED IDS: 59,57,55,53,51,49,47,45,39,33,41,37
+[18-Aug-2025 22:21:43 UTC] EXCLUDED IDS: 59,57,55,53,51,49,47,45,39,33,41,37
+[18-Aug-2025 22:21:43 UTC] LOADED ID: 31
+[18-Aug-2025 22:21:43 UTC] LOADED ID: 31
+[18-Aug-2025 22:24:06 UTC] EXCLUDED IDS: 
+[18-Aug-2025 22:24:06 UTC] LOADED ID: 59
+[18-Aug-2025 22:30:10 UTC] EXCLUDED IDS: 59,57,55,53,51,49,47,45
+[18-Aug-2025 22:30:10 UTC] LOADED ID: 39
+[18-Aug-2025 22:30:10 UTC] EXCLUDED IDS: 59,57,55,53,51,49,47,45
+[18-Aug-2025 22:30:10 UTC] LOADED ID: 39
+[18-Aug-2025 22:30:38 UTC] EXCLUDED IDS: 59,57,55,53,51,49,47,45
+[18-Aug-2025 22:30:38 UTC] LOADED ID: 39
+[18-Aug-2025 22:30:38 UTC] EXCLUDED IDS: 59,57,55,53,51,49,47,45
+[18-Aug-2025 22:30:38 UTC] LOADED ID: 39
+[18-Aug-2025 22:30:44 UTC] EXCLUDED IDS: 59,57,55,53,51,49,47,45
+[18-Aug-2025 22:30:44 UTC] EXCLUDED IDS: 59,57,55,53,51,49,47,45
+[18-Aug-2025 22:30:44 UTC] LOADED ID: 39
+[18-Aug-2025 22:30:44 UTC] LOADED ID: 39
+[18-Aug-2025 22:32:31 UTC] PHP Notice:  Undefined variable: new_ids in C:\xampp\htdocs\natalie_mota\wordpress\wp-content\themes\natalie-mota\functions.php on line 216
+[18-Aug-2025 22:32:31 UTC] PHP Notice:  Undefined variable: new_ids in C:\xampp\htdocs\natalie_mota\wordpress\wp-content\themes\natalie-mota\functions.php on line 216
+[18-Aug-2025 22:32:31 UTC] PHP Warning:  array_merge(): Expected parameter 2 to be an array, null given in C:\xampp\htdocs\natalie_mota\wordpress\wp-content\themes\natalie-mota\functions.php on line 216
+[18-Aug-2025 22:32:31 UTC] PHP Warning:  array_merge(): Expected parameter 2 to be an array, null given in C:\xampp\htdocs\natalie_mota\wordpress\wp-content\themes\natalie-mota\functions.php on line 216
+[18-Aug-2025 22:32:31 UTC] PHP Warning:  implode(): Invalid arguments passed in C:\xampp\htdocs\natalie_mota\wordpress\wp-content\themes\natalie-mota\functions.php on line 220
+[18-Aug-2025 22:32:31 UTC] PHP Warning:  implode(): Invalid arguments passed in C:\xampp\htdocs\natalie_mota\wordpress\wp-content\themes\natalie-mota\functions.php on line 220
+[18-Aug-2025 22:34:53 UTC] PHP Notice:  Undefined variable: new_ids in C:\xampp\htdocs\natalie_mota\wordpress\wp-content\themes\natalie-mota\functions.php on line 217
+[18-Aug-2025 22:34:53 UTC] PHP Warning:  array_merge(): Expected parameter 2 to be an array, null given in C:\xampp\htdocs\natalie_mota\wordpress\wp-content\themes\natalie-mota\functions.php on line 217
+[18-Aug-2025 22:34:53 UTC] PHP Warning:  implode(): Invalid arguments passed in C:\xampp\htdocs\natalie_mota\wordpress\wp-content\themes\natalie-mota\functions.php on line 221
+[18-Aug-2025 22:34:53 UTC] PHP Notice:  Undefined variable: new_ids in C:\xampp\htdocs\natalie_mota\wordpress\wp-content\themes\natalie-mota\functions.php on line 217
+[18-Aug-2025 22:34:53 UTC] PHP Warning:  array_merge(): Expected parameter 2 to be an array, null given in C:\xampp\htdocs\natalie_mota\wordpress\wp-content\themes\natalie-mota\functions.php on line 217
+[18-Aug-2025 22:34:53 UTC] PHP Warning:  implode(): Invalid arguments passed in C:\xampp\htdocs\natalie_mota\wordpress\wp-content\themes\natalie-mota\functions.php on line 221
+[18-Aug-2025 22:35:27 UTC] EXCLUDED IDS: 59,57,55,53,51,49,47,45
+[18-Aug-2025 22:35:27 UTC] PHP Fatal error:  Uncaught Error: Object of class WP_Post could not be converted to string in C:\xampp\htdocs\natalie_mota\wordpress\wp-content\themes\natalie-mota\functions.php:181
+Stack trace:
+#0 C:\xampp\htdocs\natalie_mota\wordpress\wp-content\themes\natalie-mota\functions.php(181): implode(',', Array)
+#1 C:\xampp\htdocs\natalie_mota\wordpress\wp-includes\class-wp-hook.php(324): charger_photos('')
+#2 C:\xampp\htdocs\natalie_mota\wordpress\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 C:\xampp\htdocs\natalie_mota\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#4 C:\xampp\htdocs\natalie_mota\wordpress\wp-admin\admin-ajax.php(192): do_action('wp_ajax_charger...')
+#5 {main}
+  thrown in C:\xampp\htdocs\natalie_mota\wordpress\wp-content\themes\natalie-mota\functions.php on line 181
+[18-Aug-2025 22:35:27 UTC] EXCLUDED IDS: 59,57,55,53,51,49,47,45
+[18-Aug-2025 22:35:27 UTC] PHP Fatal error:  Uncaught Error: Object of class WP_Post could not be converted to string in C:\xampp\htdocs\natalie_mota\wordpress\wp-content\themes\natalie-mota\functions.php:181
+Stack trace:
+#0 C:\xampp\htdocs\natalie_mota\wordpress\wp-content\themes\natalie-mota\functions.php(181): implode(',', Array)
+#1 C:\xampp\htdocs\natalie_mota\wordpress\wp-includes\class-wp-hook.php(324): charger_photos('')
+#2 C:\xampp\htdocs\natalie_mota\wordpress\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#3 C:\xampp\htdocs\natalie_mota\wordpress\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#4 C:\xampp\htdocs\natalie_mota\wordpress\wp-admin\admin-ajax.php(192): do_action('wp_ajax_charger...')
+#5 {main}
+  thrown in C:\xampp\htdocs\natalie_mota\wordpress\wp-content\themes\natalie-mota\functions.php on line 181
+[18-Aug-2025 22:36:03 UTC] EXCLUDED IDS: 59,57,55,53,51,49,47,45
+[18-Aug-2025 22:36:03 UTC] EXCLUDED IDS: 59,57,55,53,51,49,47,45
+[18-Aug-2025 22:36:03 UTC] LOADED ID: 35
+[18-Aug-2025 22:36:03 UTC] LOADED ID: 41
+[18-Aug-2025 22:36:22 UTC] EXCLUDED IDS: 59,57,55,53,51,49,47,45
+[18-Aug-2025 22:36:22 UTC] EXCLUDED IDS: 59,57,55,53,51,49,47,45
+[18-Aug-2025 22:36:22 UTC] LOADED ID: 33
+[18-Aug-2025 22:36:22 UTC] LOADED ID: 41
+[18-Aug-2025 22:36:22 UTC] LOADED ID: 28
+[18-Aug-2025 22:36:22 UTC] LOADED ID: 35
+[18-Aug-2025 22:36:22 UTC] LOADED ID: 43
+[18-Aug-2025 22:36:22 UTC] LOADED ID: 31
+[18-Aug-2025 22:36:22 UTC] LOADED ID: 39
+[18-Aug-2025 22:36:22 UTC] LOADED ID: 33
+[19-Aug-2025 06:19:34 UTC] Automatic updates starting...
+[19-Aug-2025 06:19:34 UTC]   Automatic plugin updates starting...
+[19-Aug-2025 06:19:34 UTC]   Automatic plugin updates complete.
+[19-Aug-2025 06:19:35 UTC]   Automatic theme updates starting...
+[19-Aug-2025 06:19:35 UTC]   Automatic theme updates complete.
+[19-Aug-2025 06:19:35 UTC] Automatic updates complete.
+[19-Aug-2025 06:19:36 UTC] EXCLUDED IDS: 59,57,55,53,51,49,47,45
+[19-Aug-2025 06:19:36 UTC] EXCLUDED IDS: 59,57,55,53,51,49,47,45
+[19-Aug-2025 06:19:36 UTC] LOADED ID: 39
+[19-Aug-2025 06:19:36 UTC] LOADED ID: 31
+[19-Aug-2025 06:19:36 UTC] LOADED ID: 33
+[19-Aug-2025 06:19:36 UTC] LOADED ID: 43
+[19-Aug-2025 06:19:36 UTC] LOADED ID: 31
+[19-Aug-2025 06:19:36 UTC] LOADED ID: 33
+[19-Aug-2025 06:19:36 UTC] LOADED ID: 35
+[19-Aug-2025 06:19:36 UTC] LOADED ID: 35
+[19-Aug-2025 06:33:07 UTC] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, function 'mon_theme_enqueue_scripttt' not found or invalid function name in C:\xampp\htdocs\natalie_mota\wordpress\wp-includes\class-wp-hook.php on line 324
+[19-Aug-2025 06:56:47 UTC] EXCLUDED IDS: 59,57,55,53,51,49,47,45
+[19-Aug-2025 06:56:47 UTC] LOADED ID: 35
+[19-Aug-2025 06:56:47 UTC] LOADED ID: 28
+[19-Aug-2025 06:56:47 UTC] LOADED ID: 41
+[19-Aug-2025 06:56:47 UTC] LOADED ID: 31
+[19-Aug-2025 06:56:48 UTC] EXCLUDED IDS: 59,57,55,53,51,49,47,45
+[19-Aug-2025 06:56:48 UTC] LOADED ID: 35
+[19-Aug-2025 06:56:48 UTC] LOADED ID: 43
+[19-Aug-2025 06:56:48 UTC] LOADED ID: 37
+[19-Aug-2025 06:56:48 UTC] LOADED ID: 41
+[19-Aug-2025 06:57:13 UTC] EXCLUDED IDS: 59,57,55,53,51,49,47,45
+[19-Aug-2025 06:57:13 UTC] LOADED ID: 31
+[19-Aug-2025 06:57:13 UTC] EXCLUDED IDS: 59,57,55,53,51,49,47,45
+[19-Aug-2025 06:57:13 UTC] LOADED ID: 39
+[19-Aug-2025 06:57:13 UTC] LOADED ID: 41
+[19-Aug-2025 06:57:13 UTC] LOADED ID: 33
+[19-Aug-2025 06:57:13 UTC] LOADED ID: 28
+[19-Aug-2025 06:57:13 UTC] LOADED ID: 43
+[19-Aug-2025 06:57:13 UTC] LOADED ID: 41
+[19-Aug-2025 06:57:13 UTC] LOADED ID: 35
+[19-Aug-2025 06:58:42 UTC] EXCLUDED IDS: 59,57,55,53,51,49,47,45,28,43,41,35
+[19-Aug-2025 06:58:42 UTC] LOADED ID: 37
+[19-Aug-2025 06:58:42 UTC] LOADED ID: 39
+[19-Aug-2025 06:58:42 UTC] LOADED ID: 31
+[19-Aug-2025 06:58:42 UTC] LOADED ID: 33
+[19-Aug-2025 06:58:42 UTC] EXCLUDED IDS: 59,57,55,53,51,49,47,45,28,43,41,35
+[19-Aug-2025 06:58:42 UTC] LOADED ID: 33
+[19-Aug-2025 06:58:42 UTC] LOADED ID: 39
+[19-Aug-2025 06:58:42 UTC] LOADED ID: 31
+[19-Aug-2025 06:58:42 UTC] LOADED ID: 37
+[19-Aug-2025 06:59:42 UTC] EXCLUDED IDS: 59,57,55,53,51,49,47,45
+[19-Aug-2025 06:59:42 UTC] EXCLUDED IDS: 59,57,55,53,51,49,47,45
+[19-Aug-2025 06:59:42 UTC] LOADED ID: 31
+[19-Aug-2025 06:59:42 UTC] LOADED ID: 39
+[19-Aug-2025 06:59:42 UTC] LOADED ID: 35
+[19-Aug-2025 06:59:42 UTC] LOADED ID: 28
+[19-Aug-2025 06:59:42 UTC] LOADED ID: 28
+[19-Aug-2025 06:59:42 UTC] LOADED ID: 35
+[19-Aug-2025 06:59:42 UTC] LOADED ID: 43
+[19-Aug-2025 06:59:42 UTC] LOADED ID: 43
+[19-Aug-2025 06:59:52 UTC] EXCLUDED IDS: 59,57,55,53,51,49,47,45
+[19-Aug-2025 06:59:52 UTC] EXCLUDED IDS: 59,57,55,53,51,49,47,45
+[19-Aug-2025 06:59:52 UTC] LOADED ID: 28
+[19-Aug-2025 06:59:52 UTC] LOADED ID: 41
+[19-Aug-2025 06:59:52 UTC] LOADED ID: 37
+[19-Aug-2025 06:59:52 UTC] LOADED ID: 33
+[19-Aug-2025 06:59:52 UTC] LOADED ID: 31
+[19-Aug-2025 06:59:52 UTC] LOADED ID: 39
+[19-Aug-2025 06:59:52 UTC] LOADED ID: 37
+[19-Aug-2025 06:59:52 UTC] LOADED ID: 41
+[19-Aug-2025 07:00:42 UTC] EXCLUDED IDS: 59,57,55,53,51,49,47,45
+[19-Aug-2025 07:00:42 UTC] EXCLUDED IDS: 59,57,55,53,51,49,47,45
+[19-Aug-2025 07:00:42 UTC] LOADED ID: 43
+[19-Aug-2025 07:00:42 UTC] LOADED ID: 35
+[19-Aug-2025 07:00:42 UTC] LOADED ID: 33
+[19-Aug-2025 07:00:42 UTC] LOADED ID: 37
+[19-Aug-2025 07:00:42 UTC] LOADED ID: 41
+[19-Aug-2025 07:00:42 UTC] LOADED ID: 31
+[19-Aug-2025 07:00:42 UTC] LOADED ID: 31
+[19-Aug-2025 07:00:42 UTC] LOADED ID: 43
+[19-Aug-2025 07:00:56 UTC] EXCLUDED IDS: 59,57,55,53,51,49,47,45
+[19-Aug-2025 07:00:56 UTC] LOADED ID: 28
+[19-Aug-2025 07:00:56 UTC] LOADED ID: 43
+[19-Aug-2025 07:00:56 UTC] LOADED ID: 41
+[19-Aug-2025 07:00:56 UTC] LOADED ID: 39
+[19-Aug-2025 07:00:56 UTC] EXCLUDED IDS: 59,57,55,53,51,49,47,45
+[19-Aug-2025 07:00:56 UTC] LOADED ID: 35
+[19-Aug-2025 07:00:56 UTC] LOADED ID: 28
+[19-Aug-2025 07:00:56 UTC] LOADED ID: 31
+[19-Aug-2025 07:00:56 UTC] LOADED ID: 41
+[19-Aug-2025 07:02:38 UTC] EXCLUDED IDS: 59,57,55,53,51,49,47,45
+[19-Aug-2025 07:02:38 UTC] EXCLUDED IDS: 59,57,55,53,51,49,47,45
+[19-Aug-2025 07:02:38 UTC] LOADED ID: 31
+[19-Aug-2025 07:02:38 UTC] LOADED ID: 33
+[19-Aug-2025 07:02:38 UTC] LOADED ID: 43
+[19-Aug-2025 07:02:38 UTC] LOADED ID: 43
+[19-Aug-2025 07:02:38 UTC] LOADED ID: 35
+[19-Aug-2025 07:02:38 UTC] LOADED ID: 35
+[19-Aug-2025 07:02:38 UTC] LOADED ID: 37
+[19-Aug-2025 07:02:38 UTC] LOADED ID: 37
+[19-Aug-2025 07:02:55 UTC] EXCLUDED IDS: 59,57,55,53,51,49,47,45,33,43,35,37
+[19-Aug-2025 07:02:55 UTC] EXCLUDED IDS: 59,57,55,53,51,49,47,45,33,43,35,37
+[19-Aug-2025 07:02:55 UTC] LOADED ID: 28
+[19-Aug-2025 07:02:55 UTC] LOADED ID: 41
+[19-Aug-2025 07:02:55 UTC] LOADED ID: 39
+[19-Aug-2025 07:02:55 UTC] LOADED ID: 28
+[19-Aug-2025 07:02:55 UTC] LOADED ID: 41
+[19-Aug-2025 07:02:55 UTC] LOADED ID: 39
+[19-Aug-2025 07:02:55 UTC] LOADED ID: 31
+[19-Aug-2025 07:02:55 UTC] LOADED ID: 31
+[19-Aug-2025 07:04:30 UTC] EXCLUDED IDS: 59,57,55,53,51,49,47,45
+[19-Aug-2025 07:04:30 UTC] EXCLUDED IDS: 59,57,55,53,51,49,47,45
+[19-Aug-2025 07:04:30 UTC] LOADED ID: 39
+[19-Aug-2025 07:04:30 UTC] LOADED ID: 37
+[19-Aug-2025 07:04:30 UTC] LOADED ID: 41
+[19-Aug-2025 07:04:30 UTC] LOADED ID: 31
+[19-Aug-2025 07:04:30 UTC] LOADED ID: 31
+[19-Aug-2025 07:04:30 UTC] LOADED ID: 28
+[19-Aug-2025 07:04:30 UTC] LOADED ID: 33
+[19-Aug-2025 07:04:30 UTC] LOADED ID: 41
+[19-Aug-2025 07:08:28 UTC] EXCLUDED IDS: 59,57,55,53,51,49,47,45
+[19-Aug-2025 07:08:28 UTC] LOADED ID: 28
+[19-Aug-2025 07:08:28 UTC] LOADED ID: 35
+[19-Aug-2025 07:08:28 UTC] LOADED ID: 31
+[19-Aug-2025 07:08:28 UTC] LOADED ID: 41
+[19-Aug-2025 07:08:48 UTC] EXCLUDED IDS: 59,57,55,53,51,49,47,45
+[19-Aug-2025 07:08:48 UTC] LOADED ID: 31
+[19-Aug-2025 07:08:48 UTC] LOADED ID: 35
+[19-Aug-2025 07:08:48 UTC] LOADED ID: 33
+[19-Aug-2025 07:08:48 UTC] LOADED ID: 39
+[19-Aug-2025 07:08:48 UTC] LOADED ID: 28
+[19-Aug-2025 07:08:48 UTC] LOADED ID: 41
+[19-Aug-2025 07:08:48 UTC] LOADED ID: 37
+[19-Aug-2025 07:08:48 UTC] LOADED ID: 43
+[19-Aug-2025 07:09:16 UTC] EXCLUDED IDS: 59,57,55,53,51,49,47,45
+[19-Aug-2025 07:09:16 UTC] LOADED ID: 39
+[19-Aug-2025 07:09:16 UTC] LOADED ID: 33
+[19-Aug-2025 07:09:16 UTC] LOADED ID: 35
+[19-Aug-2025 07:09:16 UTC] LOADED ID: 43
+[19-Aug-2025 07:09:16 UTC] LOADED ID: 37
+[19-Aug-2025 07:09:16 UTC] LOADED ID: 41
+[19-Aug-2025 07:09:16 UTC] LOADED ID: 31
+[19-Aug-2025 07:09:16 UTC] LOADED ID: 28
+[19-Aug-2025 07:14:14 UTC] EXCLUDED IDS: 59,57,55,53,51,49,47,45
+[19-Aug-2025 07:14:14 UTC] LOADED ID: 43
+[19-Aug-2025 07:14:14 UTC] LOADED ID: 41
+[19-Aug-2025 07:14:14 UTC] LOADED ID: 28
+[19-Aug-2025 07:14:14 UTC] LOADED ID: 35
+[19-Aug-2025 07:14:34 UTC] EXCLUDED IDS: 59,57,55,53,51,49,47,45
+[19-Aug-2025 07:14:34 UTC] LOADED ID: 39
+[19-Aug-2025 07:14:34 UTC] LOADED ID: 43
+[19-Aug-2025 07:14:34 UTC] LOADED ID: 35
+[19-Aug-2025 07:14:34 UTC] LOADED ID: 31
+[19-Aug-2025 07:14:34 UTC] LOADED ID: 37
+[19-Aug-2025 07:14:34 UTC] LOADED ID: 28
+[19-Aug-2025 07:14:34 UTC] LOADED ID: 41
+[19-Aug-2025 07:14:34 UTC] LOADED ID: 33
+[19-Aug-2025 07:16:11 UTC] EXCLUDED IDS: 59,57,55,53,51,49,47,45
+[19-Aug-2025 07:16:11 UTC] LOADED ID: 39
+[19-Aug-2025 07:16:11 UTC] LOADED ID: 41
+[19-Aug-2025 07:16:11 UTC] LOADED ID: 35
+[19-Aug-2025 07:16:11 UTC] LOADED ID: 43
+[19-Aug-2025 07:16:11 UTC] LOADED ID: 31
+[19-Aug-2025 07:16:11 UTC] LOADED ID: 28
+[19-Aug-2025 07:16:11 UTC] LOADED ID: 33
+[19-Aug-2025 07:16:11 UTC] LOADED ID: 37
+[19-Aug-2025 07:16:38 UTC] EXCLUDED IDS: 59,57,55,53,51,49,47,45
+[19-Aug-2025 07:16:38 UTC] LOADED ID: 39
+[19-Aug-2025 07:16:38 UTC] LOADED ID: 33
+[19-Aug-2025 07:16:38 UTC] LOADED ID: 28
+[19-Aug-2025 07:16:38 UTC] LOADED ID: 31
+[19-Aug-2025 07:16:38 UTC] LOADED ID: 43
+[19-Aug-2025 07:16:38 UTC] LOADED ID: 35
+[19-Aug-2025 07:16:38 UTC] LOADED ID: 37
+[19-Aug-2025 07:16:38 UTC] LOADED ID: 41
+[19-Aug-2025 07:16:48 UTC] EXCLUDED IDS: 59,57,55,53,51,49,47,45,39,33,28,31,43,35,37,41
+[19-Aug-2025 07:16:51 UTC] EXCLUDED IDS: 59,57,55,53,51,49,47,45,39,33,28,31,43,35,37,41
+[19-Aug-2025 07:36:56 UTC] PHP Notice:  Undefined index: categorie in C:\xampp\htdocs\natalie_mota\wordpress\wp-content\themes\natalie-mota\front-page.php on line 137
+[19-Aug-2025 07:36:56 UTC] Categorie envoyée: 
+[19-Aug-2025 07:36:56 UTC] PHP Notice:  Undefined index: format in C:\xampp\htdocs\natalie_mota\wordpress\wp-content\themes\natalie-mota\front-page.php on line 138
+[19-Aug-2025 07:36:56 UTC] Format envoyé: 
+[19-Aug-2025 07:36:56 UTC] PHP Notice:  Undefined variable: tax_query in C:\xampp\htdocs\natalie_mota\wordpress\wp-content\themes\natalie-mota\front-page.php on line 139
+[19-Aug-2025 07:36:56 UTC] Tax query: 
+[19-Aug-2025 15:08:54 UTC] EXCLUDED IDS: 59,57,55,53,51,49,47,45
+[19-Aug-2025 15:08:54 UTC] LOADED ID: 31
+[19-Aug-2025 15:08:54 UTC] LOADED ID: 43
+[19-Aug-2025 15:08:54 UTC] LOADED ID: 41
+[19-Aug-2025 15:08:54 UTC] LOADED ID: 39
+[19-Aug-2025 15:08:54 UTC] LOADED ID: 35
+[19-Aug-2025 15:08:54 UTC] LOADED ID: 28
+[19-Aug-2025 15:08:54 UTC] LOADED ID: 33
+[19-Aug-2025 15:08:54 UTC] LOADED ID: 37
+[19-Aug-2025 17:20:09 UTC] Automatic updates starting...
+[19-Aug-2025 17:20:09 UTC]   Automatic plugin updates starting...
+[19-Aug-2025 17:20:09 UTC]   Automatic plugin updates complete.
+[19-Aug-2025 17:20:10 UTC]   Automatic theme updates starting...
+[19-Aug-2025 17:20:10 UTC]   Automatic theme updates complete.
+[19-Aug-2025 17:20:10 UTC] Automatic updates complete.
