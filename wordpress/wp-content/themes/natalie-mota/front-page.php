@@ -51,32 +51,33 @@
         $years = array_unique($years); // supprime doublons
         rsort($years); // tri décroissant
     ?>
-
-    <div class="select1">
-        <select id="filter-categorie">
-            <option value="">CATÉGORIES</option>
-             <?php foreach ($categories as $cat): ?>
-                <option value="<?php echo esc_attr($cat->slug); ?>">
-                    <?php echo esc_html($cat->name); ?>
-                </option>
-            <?php endforeach; ?>
-        </select>
-        <select id="filter-format">  
-           <option value="">FORMATS</option>
-           <?php foreach ($formats as $fmt): ?>
-                <option value="<?php echo esc_attr($fmt->slug); ?>">
-                    <?php echo esc_html($fmt->name); ?>
-                </option>
-            <?php endforeach; ?>
-        </select>
-    </div>
-    <div class="select2">
-        <select id="filter-year">
-            <option value="">TRIER PAR</option>
-            <?php foreach ($years as $year): ?>
-                <option value="<?php echo esc_attr($year); ?>"><?php echo esc_html($year); ?></option>
-            <?php endforeach; ?>
-        </select>
+    <div class="select0">
+        <div class="select1">
+            <select id="filter-categorie">
+                <option value="">CATÉGORIES</option>
+                <?php foreach ($categories as $cat): ?>
+                    <option value="<?php echo esc_attr($cat->slug); ?>">
+                        <?php echo esc_html($cat->name); ?>
+                    </option>
+                <?php endforeach; ?>
+            </select>
+            <select id="filter-format">  
+            <option value="">FORMATS</option>
+            <?php foreach ($formats as $fmt): ?>
+                    <option value="<?php echo esc_attr($fmt->slug); ?>">
+                        <?php echo esc_html($fmt->name); ?>
+                    </option>
+                <?php endforeach; ?>
+            </select>
+        </div>
+        <div class="select2">
+            <select id="filter-year">
+                <option value="">TRIER PAR</option>
+                <?php foreach ($years as $year): ?>
+                    <option value="<?php echo esc_attr($year); ?>"><?php echo esc_html($year); ?></option>
+                <?php endforeach; ?>
+            </select>
+        </div>
     </div>
     <?php
 // 1) Zone d'affichage initiale
@@ -105,24 +106,25 @@ if ($images->have_posts()) :
                 $categories_list = implode(', ', $cats);
             }
 
-            echo '<a href="' . esc_url(get_permalink()) . '" 
+            echo '<div
                     class="image-galerie" 
                     data-year="' . esc_attr($year) . '">';
 
             // Image
-            the_post_thumbnail('medium', array('class' => 'images-galerie'));
+            the_post_thumbnail('large', array('class' => 'images-galerie'));
 
             // Overlay au survol
             echo '<div class="overlay">
                     <h3 class="titre-photo">' . esc_html(get_the_title()) . '</h3>
                     <p class="categorie-photo">' . esc_html($categories_list) . '</p>
+                    <p id="reff-photos" class="reference-photo">' . get_post_meta(get_the_ID(), 'reference', true) . '</p>
                     <div class="icones">
-                        <span class="icone-oeil"><i class="fa-regular fa-eye"></i></span>
+                        <a href="' . esc_url(get_permalink()) . '"  class="icone-oeil"><i class="fa-regular fa-eye"></i></a>
                         <span class="icone-grand-ecran"><i class="fa fa-expand"></i></span>
                     </div>
                   </div>';
 
-            echo '</a>';
+            echo '</div>';
         }
     endwhile;
 endif;
@@ -132,7 +134,10 @@ echo '</div>'; // #zone-photos
 
 // 2) Bouton "Charger plus" avec la liste d'IDs déjà affichés
 $excluded_str = implode(',', $excluded_ids);
+echo '<div class ="btn-content">';
 echo '<button id="btn-charger" data-excluded="' . esc_attr($excluded_str) . '">Charger plus</button>';
+echo '</div>';
+
 ?>
 
 </main>

@@ -25,7 +25,7 @@ Text Domain: nataliemota
 }
 
 * {
-    color: black;
+    color: #313144;
     font-family: 'SpaceMono';
 }
 
@@ -252,10 +252,17 @@ p {
 }
 
 .contact-single {
-    padding: 10px 90px;
+    padding: 18px 100px;
     background-color: #D8D8D8;
     text-decoration: none;
     font-size: 12px;
+    color: black;
+    border-radius: 3px;
+}
+
+.contact-single:hover {
+    color: white;
+    background-color: black;
 }
 
 .contact-btn {
@@ -293,9 +300,9 @@ p {
     justify-content: space-between;
 }
 
-#zone-photos a img {
+#zone-photos img {
     position: relative;
-    width: 620px;
+    width: 630px;
     height: 500px;
     max-width: 700px!important;
     object-fit: cover;
@@ -311,8 +318,58 @@ p {
     flex-wrap: wrap;
 }
 
+.btn-content {
+    display: flex;
+    justify-content: center;
+}
+
+#btn-charger {
+    background-color: #D8D8D8;
+    border: none;
+    border-radius: 3px;
+    padding: 18px 80px;
+    margin-bottom: 50px;
+}
+
+#btn-charger:hover {
+    background-color: black;
+    color: white;
+}
+
 .btn-pas-charger {
     display: none;
+}
+
+.select0 {
+    margin-top: 75px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.select0 select {
+    width: 200px;
+    height: 40px;
+    border: solid 1px grey;
+    border-radius: 7px;
+    padding: 0px 10px;
+    font-family: 'Poppins';
+    color: black;
+}
+
+.select1 {
+    display: flex;
+    gap: 50px;
+}
+
+
+
+ option {
+    border-radius: 7px;
+    border: none;
+}
+
+ option:checked {
+    background-color: red!important;
 }
 
 .images-galerie :hover {
@@ -388,4 +445,115 @@ p {
     background-color: black;
     border-radius: 20px;
     padding: 5px 7px;
+}
+
+/* Overlay noir transparent */
+#lightbox-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.hidden {
+  display: none!important;
+}
+
+.lightbox-content {
+  position: relative;
+  width: 87%;
+  max-height: 90%;
+  text-align: center;
+  color: #fff;
+}
+
+.lightbox-img-wrapper img {
+  margin-top: 50px;
+  max-width: 100%;
+  max-height: 70vh;
+  border-radius: 8px;
+  width: 800px;
+  object-fit: cover;
+}
+
+#lightbox-close {
+  color: white;
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.lightbox-meta {
+  margin-top: 15px;
+}
+
+.lightbox-meta p {
+    color: white;
+    text-transform: uppercase;
+}
+
+#lightbox-category {
+    position: absolute;
+    right: 265px;
+}
+
+#lightbox-reference {
+    position: absolute;
+    left: 265px;
+}
+
+.lightbox-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  max-height: 50px;
+}
+
+.lightbox-nav button {
+  border: none;
+  background: none;
+  color: #fff;
+  padding: 8px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.fleche {
+    color: white;
+    font-size: 38px;
+    font-weight: 200!important;
+}
+
+#lightbox-prev, #lightbox-next {
+    display: flex;
+    align-items: center; 
+    gap: 10px;
+}
+
+#reff-photos {
+    color: white;
+}
+
+.reference-photo {
+    display: none;
+}
+
+#lightbox-prev {
+    position: absolute;
+    left: 75px;
+    top: 50%;
+}
+
+#lightbox-next {
+    position: absolute;
+    right: 75px;
+    top: 50%;
 }

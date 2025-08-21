@@ -9,13 +9,24 @@ wp_nav_menu( array(
 ?>
 
 <?php get_template_part('template-parts/modale'); ?>
-<script>
-  if (typeof jQuery !== 'undefined') {
-    console.log('jQuery est bien chargé');
-  } else {
-    console.error('jQuery est ABSENT');
-  }
-</script>
+
+<!-- LIGHTBOX -->
+<div id="lightbox-overlay" class="hidden">
+  <div class="lightbox-content">
+    <span id="lightbox-close">&times;</span>
+    <div class="lightbox-img-wrapper">
+      <img id="lightbox-img" src="" alt="">
+    </div>
+    <div class="lightbox-meta">
+      <p id="lightbox-category"></p>
+      <p id="lightbox-reference"></p>
+    </div>
+    <div class="lightbox-nav">
+      <button id="lightbox-prev"><span class="fleche fleche-gauche">&larr;</span> Précédente</button>
+      <button id="lightbox-next">Suivante <span class="fleche fleche-droite">&rarr;</span></button>
+    </div>
+  </div>
+</div>
 
 </body>
 </html>

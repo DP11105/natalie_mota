@@ -670,3 +670,48 @@ Stack trace:
 [19-Aug-2025 17:20:10 UTC]   Automatic theme updates starting...
 [19-Aug-2025 17:20:10 UTC]   Automatic theme updates complete.
 [19-Aug-2025 17:20:10 UTC] Automatic updates complete.
+[19-Aug-2025 18:45:21 UTC] EXCLUDED IDS: 
+[19-Aug-2025 18:45:21 UTC] LOADED ID: 35
+[19-Aug-2025 18:45:21 UTC] LOADED ID: 28
+[19-Aug-2025 18:45:21 UTC] LOADED ID: 33
+[19-Aug-2025 18:45:21 UTC] LOADED ID: 49
+[19-Aug-2025 18:45:21 UTC] LOADED ID: 59
+[19-Aug-2025 18:45:21 UTC] LOADED ID: 45
+[19-Aug-2025 18:45:21 UTC] LOADED ID: 37
+[19-Aug-2025 18:45:21 UTC] LOADED ID: 53
+[19-Aug-2025 18:45:21 UTC] LOADED ID: 57
+[19-Aug-2025 18:45:21 UTC] LOADED ID: 39
+[19-Aug-2025 18:45:21 UTC] LOADED ID: 55
+[19-Aug-2025 18:45:21 UTC] LOADED ID: 47
+[19-Aug-2025 18:45:21 UTC] LOADED ID: 31
+[19-Aug-2025 18:45:21 UTC] LOADED ID: 41
+[19-Aug-2025 18:45:21 UTC] LOADED ID: 51
+[19-Aug-2025 18:45:21 UTC] LOADED ID: 43
+[19-Aug-2025 22:30:40 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ';' or ',' in C:\xampp\htdocs\natalie_mota\wordpress\wp-content\themes\natalie-mota\front-page.php on line 137
+[20-Aug-2025 06:19:17 UTC] Automatic updates starting...
+[20-Aug-2025 06:19:18 UTC]   Automatic plugin updates starting...
+[20-Aug-2025 06:19:18 UTC]   Automatic plugin updates complete.
+[20-Aug-2025 06:19:19 UTC]   Automatic theme updates starting...
+[20-Aug-2025 06:19:19 UTC]   Automatic theme updates complete.
+[20-Aug-2025 06:19:19 UTC] Automatic updates complete.
+[20-Aug-2025 17:15:11 UTC] Automatic updates starting...
+[20-Aug-2025 17:15:12 UTC]   Automatic plugin updates starting...
+[20-Aug-2025 17:15:12 UTC]   Automatic plugin updates complete.
+[20-Aug-2025 17:15:12 UTC]   Automatic theme updates starting...
+[20-Aug-2025 17:15:12 UTC]   Automatic theme updates complete.
+[20-Aug-2025 17:15:12 UTC] Automatic updates complete.
+[20-Aug-2025 17:42:30 UTC] PHP Notice:  Undefined variable: reference in C:\xampp\htdocs\natalie_mota\wordpress\wp-content\themes\natalie-mota\functions.php on line 65
+[20-Aug-2025 17:43:16 UTC] PHP Notice:  Undefined variable: reference in C:\xampp\htdocs\natalie_mota\wordpress\wp-content\themes\natalie-mota\functions.php on line 65
+[20-Aug-2025 17:43:19 UTC] PHP Notice:  Undefined variable: reference in C:\xampp\htdocs\natalie_mota\wordpress\wp-content\themes\natalie-mota\functions.php on line 65
+[21-Aug-2025 16:57:11 UTC] Automatic updates starting...
+[21-Aug-2025 16:57:12 UTC]   Automatic plugin updates starting...
+[21-Aug-2025 16:57:12 UTC]   Automatic plugin updates complete.
+[21-Aug-2025 16:57:12 UTC]   Automatic theme updates starting...
+[21-Aug-2025 16:57:12 UTC]   Automatic theme updates complete.
+[21-Aug-2025 16:57:12 UTC] Automatic updates complete.
+[21-Aug-2025 17:35:59 UTC] Automatic updates starting...
+[21-Aug-2025 17:35:59 UTC]   Automatic plugin updates starting...
+[21-Aug-2025 17:35:59 UTC]   Automatic plugin updates complete.
+[21-Aug-2025 17:35:59 UTC]   Automatic theme updates starting...
+[21-Aug-2025 17:35:59 UTC]   Automatic theme updates complete.
+[21-Aug-2025 17:35:59 UTC] Automatic updates complete.

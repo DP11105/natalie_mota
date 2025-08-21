@@ -57,6 +57,10 @@
         <p> Cette photo vous intéresse ? </p>
         <a href= "#modale-contact" class= "contact-single">Contact</a>
     </div>
+    <div class="pagination">
+        <div class="pagin-fleche-gau">&larr;</div>
+        <div class="pagin-fleche-droi">&rarr;</div>
+    </div>
  
     <div class="autres-photos">
         <h3> VOUS AIMEREZ AUSSI</h3>

@@ -26,12 +26,25 @@ add_action('wp_enqueue_scripts', 'mon_theme_enqueue_scripts');
 
 
 
+function mon_theme_enqueue_script() {
+    wp_enqueue_script(
+        'lightbox', // identifiant unique (pas d'extension .js)
+        get_stylesheet_directory_uri() . '/js/lightbox.js', 
+        array('jquery'), // dépendances (si ton script utilise jQuery)
+        false, // version (tu peux mettre filemtime() pour éviter le cache)
+        true   // charger dans le footer
+    );
+}
+add_action('wp_enqueue_scripts', 'mon_theme_enqueue_script');
+
+
+
 
 // Enqueue + localisation (assure-toi que le chemin du JS est correct)
 add_action('wp_enqueue_scripts', function() {
     wp_enqueue_script(
         'filtres-photos',
-        get_stylesheet_directory_uri() . '/js/ajax-photos.js',
+        get_stylesheet_directory_uri() . '/js/filtres.js',
         array('jquery'),
         null,
         true
@@ -48,95 +61,92 @@ add_action('wp_ajax_filtrer_photos', 'filtrer_photos_callback');
 add_action('wp_ajax_nopriv_filtrer_photos', 'filtrer_photos_callback');
 
 function filtrer_photos_callback() {
-    // Vérification du nonce
-    if ( empty($_POST['nonce']) || ! wp_verify_nonce( $_POST['nonce'], 'filtrer_photos_nonce' ) ) {
-        wp_send_json_error( array('message' => 'Nonce invalide') );
-    }
+    //check_ajax_referer('filtrer_photos_nonce', 'nonce');
+    $categorie = isset($_POST['categorie']) ? sanitize_text_field($_POST['categorie']) : '';
+    $format    = isset($_POST['format']) ? sanitize_text_field($_POST['format']) : '';
+    $year      = isset($_POST['year']) ? intval($_POST['year']) : '';
+    $paged     = isset($_POST['paged']) ? intval($_POST['paged']) : 1;
 
-    // Construction du tax_query si besoin
-    $tax_query = array();
-
-    if ( ! empty( $_POST['categorie'] ) ) {
-        $tax_query[] = array(
-            'taxonomy' => 'categorie',
-            'field'    => 'slug',
-            'terms'    => sanitize_text_field( wp_unslash( $_POST['categorie'] ) ),
-        );
-    }
-
-    if ( ! empty( $_POST['format'] ) ) {
-        $tax_query[] = array(
-            'taxonomy' => 'format',
-            'field'    => 'slug',
-            'terms'    => sanitize_text_field( wp_unslash( $_POST['format'] ) ),
-        );
-    }
-
-    // Si on a plusieurs rules, on met 'relation' au début
-    if ( count( $tax_query ) > 1 ) {
-        $tax_query = array_merge( array( 'relation' => 'AND' ), $tax_query );
-    }
-
-    // Arguments de la requête
-    $args = array(
+    $args = [
         'post_type'      => 'photo',
         'post_status'    => 'publish',
-        'posts_per_page' => -1,
-        'orderby'        => 'date',
-        'order'          => 'DESC',
-    );
+        'posts_per_page' => 8,
+        'paged'          => $paged,
+    ];
 
-    if ( ! empty( $tax_query ) ) {
-        $args['tax_query'] = $tax_query;
+    if ($categorie) {
+        $args['tax_query'][] = [
+            'taxonomy' => 'categorie',
+            'field'    => 'slug',
+            'terms'    => $categorie,
+        ];
     }
 
-    // Exécution de la requête
-    $q = new WP_Query( $args );
+    if ($format) {
+        $args['tax_query'][] = [
+            'taxonomy' => 'format',
+            'field'    => 'slug',
+            'terms'    => $format,
+        ];
+    }
 
-    ob_start();
+    if ($year) {
+        $args['date_query'][] = [
+            'year' => $year,
+        ];
+    }
 
-    if ( $q->have_posts() ) {
-        while ( $q->have_posts() ) {
-            $q->the_post();
+    $query = new WP_Query($args);
+    $html = '';
 
-            if ( has_post_thumbnail() ) {
-    $year  = get_the_date( 'Y' );
-    $title = get_the_title();
+    if ($query->have_posts()) {
+        while ($query->have_posts()) {
+            $query->the_post();
+            if (has_post_thumbnail()) {
+                $year_post = get_the_date('Y');
+                $categories = get_the_terms(get_the_ID(), 'categorie');
+                $categories_list = '';
 
-    // Récupère juste les noms des catégories (pas de balise <a>)
-    $categories_terms = wp_get_post_terms( get_the_ID(), 'categorie', ['fields' => 'names'] );
-    $categories       = !empty( $categories_terms ) ? implode( ', ', $categories_terms ) : '';
+                if ($categories && !is_wp_error($categories)) {
+                    $cats = wp_list_pluck($categories, 'name');
+                    $categories_list = implode(', ', $cats);
+                }
 
-    echo '<a href="' . esc_url( get_permalink() ) . '" data-year="' . esc_attr( $year ) . '" class="image-galerie">';
-        // image avec classe
-        echo get_the_post_thumbnail( get_the_ID(), 'medium', array( 'class' => 'images-galerie' ) );
+                $html .= '  <div
+                            class="image-galerie" 
+                            data-year="' . esc_attr($year_post) . '">';
 
-        // overlay
-        echo '<div class="overlay">';
-            echo '<h3 class="titre-photo">' . esc_html( $title ) . '</h3>';
-            if ( $categories ) {
-                echo '<p class="categorie-photo">' . esc_html( $categories ) . '</p>';
+                $html .= get_the_post_thumbnail(get_the_ID(), 'large', ['class' => 'images-galerie']);
+
+                $html .= '<div class="overlay">
+                            <h3 class="titre-photo">' . esc_html(get_the_title()) . '</h3>
+                            <p class="categorie-photo">' . esc_html($categories_list) . '</p>
+                            <p id="reff-photos" class="reference-photo">' . get_post_meta(get_the_ID(), 'reference', true) . '</p>
+                            <div class="icones">
+                                <a href="' . esc_url(get_permalink()) . '" class="icone-oeil"><i class="fa-regular fa-eye"></i></a>
+                                  <span class="icone-grand-ecran"><i class="fa fa-expand"></i></span>
+                            </div>
+                          </div>';
+
+                $html .= '</div>';
             }
-            echo '<div class="icones">';
-                echo '<span class="icone-oeil"><i class="fa-regular fa-eye" aria-hidden="true"></i></span>';
-                echo '<span class="icone-grand-ecran"><i class="fa-solid fa-expand" aria-hidden="true"></i></span>';
-            echo '</div>';
-        echo '</div>';
-
-    echo '</a>';
-}
         }
     } else {
-        echo '<p>Aucune photo trouvée.</p>';
+        $html = '<p>Aucune photo trouvée.</p>';
     }
-
     wp_reset_postdata();
 
-    $html = ob_get_clean();
-
-    wp_send_json_success( array( 'html' => $html ) );
+    wp_send_json_success([
+        'html'  => $html,
+        'debug' => [
+            'categorie' => $categorie,
+            'format'    => $format,
+            'year'      => $year,
+            'paged'     => $paged,
+            'args'      => $args,
+        ]
+    ]);
 }
-
 
 
 // Enqueue JS + localisation
@@ -160,7 +170,7 @@ add_action('wp_ajax_charger_photos', 'charger_photos');
 add_action('wp_ajax_nopriv_charger_photos', 'charger_photos');
 
 function charger_photos() {
-    check_ajax_referer('charger_photos_nonce', 'nonce');
+    //check_ajax_referer('charger_photos_nonce', 'nonce');
 
     // IDs déjà affichés
     $excluded_ids = !empty($_POST['excluded']) ? array_map('intval', explode(',', $_POST['excluded'])) : [];
@@ -169,10 +179,13 @@ function charger_photos() {
     $args = array(
         'post_type'      => 'photo',
         'post_status'    => 'publish',
-        'posts_per_page' => 8,
+        'posts_per_page' => -1,
         'post__not_in'   => $excluded_ids,
+        'orderby'        => 'rand'
+        
     );
 
+    
     $query = new WP_Query($args);
     ob_start();
     $new_ids = [];
@@ -188,19 +201,21 @@ function charger_photos() {
                     $cats = wp_list_pluck($categories, 'name');
                     $categories_list = implode(', ', $cats);
                 }
-                
-                echo '<a href="' . esc_url(get_permalink()) . '" class="image-galerie" data-year="' . esc_attr($year) . '">';
-                echo get_the_post_thumbnail(get_the_ID(), 'medium', array('class' => 'images-galerie'));
+               
+                echo '<div class="image-galerie" data-year="' . esc_attr($year) . '">';
+                echo get_the_post_thumbnail(get_the_ID(), 'large', array('class' => 'images-galerie'));
                 echo '<div class="overlay">
                         <h3 class="titre-photo">' . esc_html(get_the_title()) . '</h3>
                         <p class="categorie-photo">' . esc_html($categories_list) . '</p> 
+                        <p id="reff-photos" class="reference-photo">' . get_post_meta(get_the_ID(), 'reference', true) . '</p>
                         <div class="icones">
-                            <span class="icone-oeil"><i class="fa-regular fa-eye"></i></span>
+                            <a href="' . esc_url(get_permalink()) . '" class="icone-oeil"><i class="fa-regular fa-eye"></i></a>
                             <span class="icone-grand-ecran"><i class="fa fa-expand"></i></span>
                         </div>
                       </div>';
-                echo '</a>';
+                echo '</div>';
             }
+            
         endwhile;
     endif;
 
