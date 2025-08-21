@@ -26,6 +26,19 @@ add_action('wp_enqueue_scripts', 'mon_theme_enqueue_scripts');
 
 
 
+// Dans functions.php ou via wp_enqueue_script()
+function enqueue_custom_pagination_script() {
+    wp_enqueue_script(
+        'pagination-js',
+        get_stylesheet_directory_uri() . '/js/pagination.js',
+        ['jquery'],
+        '1.0',
+        true
+    );
+}
+add_action('wp_enqueue_scripts', 'enqueue_custom_pagination_script');
+
+
 function mon_theme_enqueue_script() {
     wp_enqueue_script(
         'lightbox', // identifiant unique (pas d'extension .js)

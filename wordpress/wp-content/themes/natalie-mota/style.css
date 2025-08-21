@@ -251,6 +251,12 @@ p {
     height: 744px;
 }
 
+.coté-pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .contact-single {
     padding: 18px 100px;
     background-color: #D8D8D8;
@@ -272,22 +278,89 @@ p {
     margin: 30px 0px;
 }
 
+.custom-pagination { 
+  position: relative;
+  width: 100px;
+  max-height: 200px;
+  display: flex;
+  justify-content: end;
+  gap: 32px;
+  padding-bottom: 30px;
+  margin-top: 10px;
+}
+
+.custom-image-link img {
+  max-width: 100px;
+  width: 100px ;
+  height: 100px;
+  display: block;
+  transition: transform .25s ease;
+  object-fit: cover;
+  top: 0;
+  margin-right: -32px;
+}
+
+.custom-image-link:hover img {
+  transform: scale(1.02);
+}
+
+.pagin-btn {
+    display: flex;
+    align-items: center;
+    
+}
+
+.pagin-fleche-gau,
+.pagin-fleche-droir {
+  bottom: 0;
+  font-size: 28px;
+  line-height: 1;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+
+.pagin-fleche-droir {
+    position: absolute;
+    bottom: 0;
+    right: -7px;
+}
+
+.pagin-fleche-gau {
+    position: absolute;
+    bottom: 0 ;
+    left: -7px
+}
+
+
+.slider-meta {
+  text-align: center;
+  margin-top: 16px;
+}
+
+.slider-meta .titre-photo { margin: 8px 0 4px; }
+.slider-meta .categorie-photo,
+.slider-meta .reference-photo { margin: 0; font-size: 14px; opacity: .8; }
+
 .autres-photos {
     border-top: solid 1px;
     padding-top: 50px;
     gap: 20px;
 }
 
+
 .autres-photos h3 {
     font-weight: 400;
 }
 
 .photos a {
-    width: 48%;
+    width: 49%;
     height: 495px;
     gap: 20px;
     object-fit: cover!important;
+    
 }
+
 
 .photos img {
     width: 100%;

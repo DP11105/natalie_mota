@@ -42,17 +42,4 @@ document.addEventListener('DOMContentLoaded', function () {
   
 });
 
- // Navigation
-    jQuery('.pagin-fleche-gauche').on('click', function() {
-        currentIndex = (currentIndex - 1 + photos.length) % photos.length;
-        openLightbox(currentIndex);
-    });
-
-    jQuery('.pagin-fleche-droi').on('click', function() {
-        currentIndex = (currentIndex + 1) % photos.length;
-        openLightbox(currentIndex);
-    });
-
-
-
     

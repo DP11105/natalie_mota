@@ -53,14 +53,64 @@
     <?php endwhile; else : ?>
         <p>Aucune photo trouvée.</p>
     <?php endif; ?>
-    <div class="contact-btn">
-        <p> Cette photo vous intéresse ? </p>
-        <a href= "#modale-contact" class= "contact-single">Contact</a>
+    <div class="coté-pagination">
+        <div class="contact-btn">
+            <p> Cette photo vous intéresse ? </p>
+            <a href= "#modale-contact" class= "contact-single">Contact</a>
+        </div>
+
+
+
+        <?php
+        // Récupération des posts (tous les "photo")
+        $slides   = [];
+        $indexCur = 0;
+
+        $args = [
+        'post_type'      => 'photo',
+        'post_status'    => 'publish',
+        'posts_per_page' => -1,
+        'orderby'        => 'date',
+        'order'          => 'DESC',
+        'post__not_in'   => [ get_the_ID() ], // Exclut le post actuel
+        ];
+        $posts = get_posts($args);
+
+        foreach ($posts as $i => $p) {
+        $img = get_the_post_thumbnail_url($p->ID, 'medium');
+        if (!$img) continue;
+
+        $slides[] = [
+            'id'        => $p->ID,
+            'title'     => get_the_title($p->ID),
+            'src'       => $img,
+            'permalink' => get_permalink($p->ID),
+        ];
+        if ($p->ID === get_the_ID()) {
+            $indexCur = count($slides) - 1;
+        }
+        }
+        ?>
+
+        <div class="custom-pagination" 
+            data-slides='<?php echo wp_json_encode($slides); ?>' 
+            data-index="<?php echo esc_attr($indexCur); ?>'">
+
+        
+
+        <a id="slider-link" href="<?php echo esc_url(get_permalink()); ?>" class="custom-image-link">
+            <img id="slider-img" 
+                src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'medium') ?: 'https://via.placeholder.com/800x600'; ?>" 
+                alt="<?php the_title_attribute(); ?>">
+        </a>
+        <div class="pagin-btn">
+            <button class="pagin-fleche-gau" aria-label="Précédent">←</button>
+            <button class="pagin-fleche-droir" aria-label="Suivant">→</button>
+        </div>
+        </div>
     </div>
-    <div class="pagination">
-        <div class="pagin-fleche-gau">&larr;</div>
-        <div class="pagin-fleche-droi">&rarr;</div>
-    </div>
+
+
  
     <div class="autres-photos">
         <h3> VOUS AIMEREZ AUSSI</h3>
