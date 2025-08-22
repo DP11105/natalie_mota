@@ -80,6 +80,11 @@ p {
 	line-height: 60px;
 }
 
+#burger-open,
+  #burger-close {
+    display: none;
+  }
+
 .inside-navigation {
 	position: relative;
 }
@@ -549,7 +554,7 @@ p {
 .lightbox-img-wrapper img {
   margin-top: 50px;
   max-width: 100%;
-  max-height: 70vh;
+  height: 70vh;
   border-radius: 8px;
   width: 800px;
   object-fit: cover;
@@ -629,4 +634,292 @@ p {
     position: absolute;
     right: 75px;
     top: 50%;
+}
+
+/* ==== Responsive CSS ==== */
+@media screen and (max-width: 1200px) {
+    main {
+        width: 80%;
+        max-width: 1200px;
+    }
+
+    h2 {
+        font-size: 48px;
+    }
+
+    .main-nav img {
+        max-width: 180px;
+    }
+
+    .main-menu {
+        gap: 20px;
+    }
+
+    .contact-single {
+        padding: 0;
+        width: 100px;
+        height: 40px;
+    }
+
+    .custom-pagination {
+        display: none ;
+    }
+
+    .custom-image-link img {
+        max-width: 80px;
+        width: 80px;
+        height: 80px;
+    }
+
+    #zone-photos img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+    }
+
+    #zone-photos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .photos a {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .select0 {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 30px;
+    }
+
+    .select1 {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .select0 select {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .image-galerie {
+        max-height: 400px;
+        width: 100%;
+        height: 400px;
+    }
+
+    .image-galerie .overlay {
+        height: 400px;
+    }
+
+    .coté-gauche,
+    .coté-droit {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .coté-droit img {
+        height: auto;
+        max-height: none;
+    }
+
+    .custom-pagination {
+        gap: 15px;
+        width: auto;
+    }
+
+    .custom-pagination .custom-image-link img {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h2 {
+        font-size: 36px;
+    }
+
+    .main-menu a {
+        font-size: 14px;
+    }
+
+    .custom-image-link img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .photos a {
+        width: 100%;
+        height: auto;
+    }
+
+    #zone-photos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .select0 {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .select0 select {
+        width: 100%;
+    }
+
+    .image-galerie {
+        max-height: 300px;
+    }
+
+    .image-galerie .overlay {
+        height: 300px;
+    }
+
+    .coté-gauche h2 {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    
+
+    main {
+        margin: auto ;
+        max-width: 400px;
+    }
+
+    .main-nav img {
+        width: 130px;
+    }
+
+    .menu-principal-container {
+        display: none;
+    }
+
+    /* Boutons */
+    .burger-btn {
+    display: inline!important;
+    background: none;
+    border: none;
+    cursor: pointer;
+    }
+
+    .hidden {
+    display: none!important;
+    }
+
+    .fixed {
+        position: fixed;
+    
+    }
+
+    /* Menu mobile (par défaut caché) */
+    #mobile-menu {
+    position: fixed;
+    top: 100px; /* ajuste selon ton header */
+    left: 0;
+    height: 90%;
+    width: 100%;
+    background: red;
+    text-align: center;
+    padding: 20px 0;
+    z-index: 999;
+    }
+        
+    h2 {
+        font-size: 24px;
+    }
+
+    .photo-item {
+        flex-direction: column; 
+    }
+
+    .coté-gauche {
+        order: 2;  
+        width: 100%; 
+    }
+
+    .coté-droit img {
+        order: 1; 
+        width: 280px;
+        margin-bottom: 10px;
+        height: 400px; 
+    }
+
+    .contact-btn {
+        flex-direction: column;
+        width: 256px;
+    }
+
+    .contact-single {
+        padding: 20px 80px 5px 80px;
+        text-align: center;
+    }
+
+    .photos {
+        flex-direction: column;
+    }
+
+    .custom-image-link img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .photos img {
+        width: 280px;
+        height: 280px;
+    }
+
+    .select0 select {
+        width: 255px;
+        max-width: 355px;
+    }
+
+    .select0 {
+        align-items: center ;
+    }
+
+    .image-galerie {
+        max-height: 250px;
+        height: 250px;
+    }
+
+    .image-galerie img {
+        height: 250px!important;
+        width: 300px;
+    }
+
+    .image-galerie .overlay {
+        height: 250px;
+    }
+
+    .lightbox-img-wrapper img {
+        margin-top: 50px;
+        max-width: 90%;
+        max-height: 70vh;
+        border-radius: 8px;
+        width: 800px;
+        object-fit: cover;
+    }
+
+    #lightbox-prev {
+        left: -30px;
+        color: transparent;
+    }
+
+    #lightbox-next {
+        right: -30px;
+        color: transparent;
+    }
+
+    .fleche {
+        color: white;
+    }
+
+    .titre-photo {
+        font-size: 14px;
+    }
 }

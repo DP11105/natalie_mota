@@ -50,6 +50,16 @@ function mon_theme_enqueue_script() {
 }
 add_action('wp_enqueue_scripts', 'mon_theme_enqueue_script');
 
+function mon_theme_enqueue_scrip() {
+    wp_enqueue_script(
+        'menu.js', // nom interne
+        get_stylesheet_directory_uri(). '/js/menu.js', // chemin vers le fichier
+        array(), // dépendances éventuelles (ex: array('jquery'))
+        false, // version (false pour ne pas mettre de version)
+        true // true pour le charger dans le footer
+    );
+}
+add_action('wp_enqueue_scripts', 'mon_theme_enqueue_scrip');
 
 
 
