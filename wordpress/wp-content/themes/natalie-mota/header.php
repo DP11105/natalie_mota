@@ -33,9 +33,9 @@
       <div id="mobile-menu" class="hidden"> 
          
          <ul>
-          <li><a href="">Accueil</a></li>
-          <li><a href="a-propos">A propos</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="<?php echo esc_url( home_url( '/' ) ); ?>">ACCUEIL</a></li>
+          <li><a href="a-propos">à PROPOS</a></li>
+          <li><a href="#" class="contact">CONTACT</a></li>
         </ul>
       </div>
      

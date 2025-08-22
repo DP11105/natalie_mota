@@ -2,6 +2,11 @@ document.addEventListener('DOMContentLoaded', function () {
     var modal = document.getElementById("contactModal");
     var btn = document.getElementById("menu-item-61");
     var span = modal.querySelector(".close");
+    var contact = document.querySelector(".contact");
+    
+    contact.onclick = function () {
+        modal.style.display = "block"
+    }
 
     btn.onclick = function () {
         modal.style.display = "block";
@@ -16,6 +21,8 @@ document.addEventListener('DOMContentLoaded', function () {
             modal.style.display = "none";
         }
     }
+
+    
 });
 
 document.addEventListener('DOMContentLoaded', function () {
