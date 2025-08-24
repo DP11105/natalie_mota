@@ -34,7 +34,16 @@ class ComposerStaticInit652899b34da171aac8f751a6c639281f
     );
 
     public static $classMap = array (
+        'ACF\\Blocks\\Bindings' => __DIR__ . '/../..' . '/includes/Blocks/Bindings.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
+        'SCF\\Forms\\WC_Order' => __DIR__ . '/../..' . '/includes/forms/WC_Order.php',
+        'SCF\\Meta\\Comment' => __DIR__ . '/../..' . '/includes/Meta/Comment.php',
+        'SCF\\Meta\\MetaLocation' => __DIR__ . '/../..' . '/includes/Meta/MetaLocation.php',
+        'SCF\\Meta\\Option' => __DIR__ . '/../..' . '/includes/Meta/Option.php',
+        'SCF\\Meta\\Post' => __DIR__ . '/../..' . '/includes/Meta/Post.php',
+        'SCF\\Meta\\Term' => __DIR__ . '/../..' . '/includes/Meta/Term.php',
+        'SCF\\Meta\\User' => __DIR__ . '/../..' . '/includes/Meta/User.php',
+        'SCF\\Meta\\WooOrder' => __DIR__ . '/../..' . '/includes/Meta/WooOrder.php',
     );
 
     public static function getInitializer(ClassLoader $loader)
